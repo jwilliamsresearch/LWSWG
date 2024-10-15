@@ -1,6 +1,6 @@
 ![Leisure Walking Systems Working Group Logo](docs/images/lwswg-2.png)
 
-<p align="center"> <a href="">[Website]</a> - <a href="">[GitHub]</a></p>
+<p align="center"> <a href="https://lwswg.jwilliams.science">[Website]</a> - <a href="https://github.com/jwilliamsresearch/LWSWG/">[GitHub]</a></p>
 
 <h2 align="center">Discussing best practices and opportunities for representing place in leisure walking systems.</h2>
 

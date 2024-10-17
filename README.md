@@ -1,4 +1,4 @@
-![Leisure Walking Systems Working Group Logo](docs/images/lwswg-2.png)
+![Leisure Walking Systems Working Group Logo with acronym of LWSWG.](docs/images/lwswg-2.png)
 
 <p align="center"> <a href="https://lwswg.jwilliams.science">[Website]</a> - <a href="https://github.com/jwilliamsresearch/LWSWG/">[GitHub]</a></p>
 

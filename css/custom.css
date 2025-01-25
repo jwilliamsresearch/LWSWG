@@ -5,6 +5,10 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
+* {
+    border-radius: 0px !important;
+}
+
 #main-header {
     background-color: #6ce2a7;
     background-image:  url("../images/background.jpg");

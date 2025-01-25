@@ -4,3 +4,5 @@ Bootstrap v5.3.3 - https://getbootstrap.com/docs/5.3/getting-started/download/ -
 Bootswatch v5.3.3 - https://bootswatch.com/ - MIT License - https://github.com/thomaspark/bootswatch/blob/v5/LICENSE
 
 Bootstrap Icons v1.11.3 - https://icons.getbootstrap.com/ - MIT License - https://github.com/twbs/icons/blob/main/LICENSE
+
+Vanilla Version 1.8.1 - https://micku7zu.github.io/vanilla-tilt.js/ - MIT License - https://github.com/micku7zu/vanilla-tilt.js/blob/master/LICENSE

@@ -25,21 +25,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="main-nav">
                     <div class="navbar-nav ms-auto">
-                        <a class="nav-link active" aria-current="page" href="/">Home</a>
-                        <a class="nav-link" href="about.html">About</a>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Meetings
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end">
-                                <li><a class="dropdown-item" href="meetings.html">Meetings</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="meetings.html#initial">Initial Working Group
-                                        Meeting</a></li>
-                                <li><a class="dropdown-item" href="meetings.html#meetinglog">Meeting Log</a></li>
-                            </ul>
-                        </li>
+                        <a class="nav-link active" href="/">Home</a>
+                        <a class="nav-link" aria-current="page" href="about.html">About</a>
+                        <a class="nav-link" href="meetings.html">Meetings</a>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
@@ -65,7 +53,7 @@
             <div class="container">
                 <div class="card p-4 bg-dark-transparent text-center text-white">
                     <img id="main-logo" class="img-fluid mx-auto d-block mb-4" src="/images/lwswg-logo.png"
-                        alt="Leisure Walking Systems Working Group">
+                        alt="Leisure Walking Systems Working Group" data-tilt data-tilt-full-page-listening data-tilt-reset="false" data-tilt-glare data-tilt-max-glare="0.8">
                     <h1>Discussing best practices and opportunities for representing place in leisure walking
                         systems.</h1>
                     <a type="button" class="btn btn-success btn-lg mt-4" href="mailto:James.Williams@Nottingham.ac.uk?subject=Leisure Walking Systems Working Group">Interested in Discussing Leisure Walking Systems? Get in Contact!</a>
@@ -169,7 +157,8 @@
                     Williams</a> | <a class="text-white" href="imports/sources.md">Attribution</a></p>
         </div>
     </footer>
-    <script src="imports/Bootstrap/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="imports/Bootstrap/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="imports/vanilla-tilt/vanilla-tilt.js"></script>
 </body>
 
 </html>

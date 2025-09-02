@@ -33,24 +33,33 @@
                         <a class="nav-link" href="../meetings.html">Meetings</a>
                         <a class="nav-link" href="../resources.html">Resources</a>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" aria-current="page" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link dropdown-toggle active" aria-current="page" href="#" id="researchHubDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Research Hub
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-end">
-                                <li><a class="dropdown-item" href="documentation/">Documentation Home</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="recommendation-systems.html">Recommendation Systems</a></li>
-                                <li><a class="dropdown-item" href="geospatial-integration.html">Geospatial Data Integration</a></li>
-                                <li><a class="dropdown-item" href="place-representation.html">Place Representation</a></li>
-                                <li><a class="dropdown-item" href="data-sharing.html">Data Sharing Standards</a></li>
-                                <li><a class="dropdown-item" href="route-algorithms.html">Walking Route Algorithms</a></li>
-                                <li><a class="dropdown-item" href="user-experience.html">User Experience Design</a></li>
-                                <li><a class="dropdown-item active" aria-current="page" href="technical-architecture.html">Technical Architecture</a></li>
-                                <li><a class="dropdown-item" href="research-methodology.html">Research Methodology</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="checklist.html">Implementation Checklist</a></li>
-                            </ul>
+                            <div class="dropdown-menu dropdown-menu-wide" aria-labelledby="researchHubDropdown">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <h6>Core Research</h6>
+                                        <a class="dropdown-item" href="place-representation.html">Place Representation</a>
+                                        <a class="dropdown-item" href="user-experience.html">User Experience Design</a>
+                                        <a class="dropdown-item" href="research-methodology.html">Research Methodology</a>
+                                        <a class="dropdown-item" href="data-sharing.html">Data Sharing Standards</a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h6>Technical Implementation</h6>
+                                        <a class="dropdown-item" href="recommendation-systems.html">Recommendation Systems</a>
+                                        <a class="dropdown-item" href="geospatial-integration.html">Geospatial Data Integration</a>
+                                        <a class="dropdown-item" href="route-algorithms.html">Walking Route Algorithms</a>
+                                        <a class="dropdown-item active" aria-current="page" href="technical-architecture.html">Technical Architecture</a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h6>Resources</h6>
+                                        <a class="dropdown-item" href="index.html">Documentation Home</a>
+                                        <a class="dropdown-item" href="checklist.html">Implementation Checklist</a>
+                                        <a class="dropdown-item" href="glossary.html">Glossary</a>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"

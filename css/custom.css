@@ -156,3 +156,34 @@ nav .dropdown-item:hover {
 footer {
     background: linear-gradient(135deg, var(--dark-gray) 0%, var(--primary-color) 100%);
 }
+
+/* Wide Navigation Dropdown (Mega Menu) */
+.dropdown-menu.dropdown-menu-wide {
+    width: 700px;
+    max-width: 90vw;
+    padding: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0; /* Removes default margin that can cause a gap */
+    border: none; /* remove default border to match the rest of the theme */
+    box-shadow: var(--box-shadow);
+}
+
+.dropdown-menu-wide .row {
+    --bs-gutter-x: 2rem;
+}
+
+.dropdown-menu-wide h6 {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.dropdown-menu-wide .dropdown-item {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    white-space: normal; /* Allow text to wrap */
+}

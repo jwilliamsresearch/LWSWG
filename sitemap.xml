@@ -86,6 +86,12 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+    <url>
+        <loc>https://lwswg.jwilliams.science/documentation/glossary.html</loc>
+        <lastmod>2025-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
     
     <!-- Impact Pages -->
     <url>

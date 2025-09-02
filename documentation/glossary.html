@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Glossary of Terms | LWSWG Research Hub</title>
+    <meta name="description" content="A comprehensive glossary of over 100 key terms and concepts related to leisure walking systems, geospatial technology, user experience design, and research methodology.">
+    <meta name="keywords" content="glossary, walking systems, geospatial, GIS, UX, research, terminology, definitions, H3, think-aloud protocol">
+    <link rel="canonical" href="https://lwswg.jwilliams.science/documentation/glossary.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lwswg.jwilliams.science/documentation/glossary.html">
+    <meta property="og:title" content="Glossary of Terms | LWSWG Research Hub">
+    <meta property="og:description" content="A comprehensive glossary of key terms related to leisure walking systems, geospatial technology, and user experience design.">
+    <meta property="og:image" content="https://lwswg.jwilliams.science/images/lwswg-logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://lwswg.jwilliams.science/documentation/glossary.html">
+    <meta property="twitter:title" content="Glossary of Terms | LWSWG Research Hub">
+    <meta property="twitter:description" content="A comprehensive glossary of key terms related to leisure walking systems, geospatial technology, and user experience design.">
+    <meta property="twitter:image" content="https://lwswg.jwilliams.science/images/lwswg-logo.png">
+
+    <link rel="icon" type="image/png" href="../images/favicon-48x48.png" sizes="48x48" />
+    <link href="../imports/Bootswatch/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../images/lwswg-logo.png" alt="LWSWG (Leisure Walking Systems Working Group) Logo"
+                        height="52">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="main-nav">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="../index.html">Home</a>
+                        <a class="nav-link" href="../about.html">About</a>
+                        <a class="nav-link" href="../meetings.html">Meetings</a>
+                        <a class="nav-link" href="../resources.html">Resources</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" aria-current="page" href="#" id="researchHubDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Research Hub
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-wide" aria-labelledby="researchHubDropdown">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <h6>Core Research</h6>
+                                        <a class="dropdown-item" href="place-representation.html">Place Representation</a>
+                                        <a class="dropdown-item" href="user-experience.html">User Experience Design</a>
+                                        <a class="dropdown-item" href="research-methodology.html">Research Methodology</a>
+                                        <a class="dropdown-item" href="data-sharing.html">Data Sharing Standards</a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h6>Technical Implementation</h6>
+                                        <a class="dropdown-item" href="recommendation-systems.html">Recommendation Systems</a>
+                                        <a class="dropdown-item" href="geospatial-integration.html">Geospatial Data Integration</a>
+                                        <a class="dropdown-item" href="route-algorithms.html">Walking Route Algorithms</a>
+                                        <a class="dropdown-item" href="technical-architecture.html">Technical Architecture</a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h6>Resources</h6>
+                                        <a class="dropdown-item" href="index.html">Documentation Home</a>
+                                        <a class="dropdown-item" href="checklist.html">Implementation Checklist</a>
+                                        <a class="dropdown-item active" aria-current="page" href="glossary.html">Glossary</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Impact Outputs
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><h6 class="dropdown-header">Month 1</h6></li>
+                                <li><a class="dropdown-item" href="../impact/benefits.html">Benefits and Market Differentiators</a></li>
+                                <li><a class="dropdown-item" href="../impact/digital.html">Digital Presence</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><h6 class="dropdown-header">Month 2</h6></li>
+                                <li><a class="dropdown-item" href="../impact/demonstrator.html">Demonstrator System</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><h6 class="dropdown-header">Month 3</h6></li>
+                                <li><a class="dropdown-item" href="../impact/technical-report.html">Initial Technical Report</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="main-header" class="">
+            <div class="container">
+                <div class="card p-4 bg-dark-transparent text-white">
+                    <div class="row">
+                        <div class="col-md-4 align-self-center">
+                            <img id="main-logo" class="img-fluid mx-auto d-block my-2" src="../images/lwswg-logo.png"
+                                alt="Leisure Walking Systems Working Group">
+                        </div>
+                        <div class="col-md-8 align-self-center">
+                            <h1>Glossary of Terms</h1>
+                            <p class="lead mb-0">A comprehensive dictionary of key concepts in leisure walking systems and geospatial technology.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="card my-4">
+                <div class="card-body">
+                    <p class="lead">This glossary provides definitions for key terms and concepts used throughout the Leisure Walking Systems Working Group's documentation. It is intended to serve as a reference for researchers, developers, designers, and anyone interested in the technical and theoretical foundations of walking systems.</p>
+                    <hr>
+                    <p class="text-center small">
+                        Jump to section:
+                        <a href="#A">A</a> | <a href="#B">B</a> | <a href="#C">C</a> | <a href="#D">D</a> | <a href="#E">E</a> | <a href="#F">F</a> | <a href="#G">G</a> | <a href="#H">H</a> | <a href="#I">I</a> | <a href="#J">J</a> | <a href="#K">K</a> | <a href="#L">L</a> | <a href="#M">M</a> | <a href="#N">N</a> | <a href="#O">O</a> | <a href="#P">P</a> | <a href="#Q">Q</a> | <a href="#R">R</a> | <a href="#S">S</a> | <a href="#T">T</a> | <a href="#U">U</a> | <a href="#V">V</a> | <a href="#W">W</a>
+                    </p>
+                </div>
+            </div>
+
+            <div id="glossary-content">
+                <!-- A -->
+                <div class="card mb-3">
+                    <div class="card-header h2" id="A">A</div>
+                    <div class="card-body">
+                        <dl>
+                            <dt>A/B Testing</dt>
+                            <dd>A research method where two variants of a system (A and B) are compared to determine which one performs better against a specific metric.</dd>
+                            <dt>Accessibility</dt>
+                            <dd>The design of products, devices, services, or environments for people with disabilities or specific access needs. In walking systems, this includes features for wheelchair users, visually impaired individuals, and others.</dd>
+                            <dt>Accuracy</dt>
+                            <dd>A measure of how close a measurement is to the true value. In geospatial contexts, it refers to the degree to which location data corresponds to the real-world position.</dd>
+                            <dt>Affordance</dt>
+                            <dd>A property of an object or environment that indicates how it can be used. For example, a pavement affords walking.</dd>
+                            <dt>API (Application Programming Interface)</dt>
+                            <dd>A set of rules and protocols that allows different software applications to communicate with each other.</dd>
+                            <dt>Augmented Reality (AR)</dt>
+                            <dd>An interactive experience where computer-generated information is overlaid onto the real world.</dd>
+                        </dl>
+                    </div>
+                </div>
+                
+                <!-- B -->
+                <div class="card mb-3">
+                    <div class="card-header h2" id="B">B</div>
+                    <div class="card-body">
+                        <dl>
+                            <dt>Basemap</dt>
+                            <dd>A background map layer that provides geographical context, such as satellite imagery, street maps, or terrain.</dd>
+                            <dt>Beacon</dt>
+                            <dd>A small, low-energy Bluetooth device used for indoor positioning and proximity-based notifications.</dd>
+                            <dt>Bidirectional Search</dt>
+                            <dd>A route-finding algorithm that searches simultaneously from the start and end points to find a path more efficiently.</dd>
+                            <dt>Buffering</dt>
+                            <dd>A GIS operation that creates a zone around a geographic feature at a specified distance.</dd>
+                        </dl>
+                    </div>
+                </div>
+                
+                <!-- C -->
+                <div class="card mb-3">
+                    <div class="card-header h2" id="C">C</div>
+                    <div class="card-body">
+                        <dl>
+                            <dt>Caching</dt>
+                            <dd>Storing data locally to reduce the need to fetch it from a remote source, improving performance and reducing latency.</dd>
+                            <dt>Cartography</dt>
+                            <dd>The science and art of map-making.</dd>
+                            <dt>Cognitive Mapping</dt>
+                            <dd>The mental process of acquiring, storing, and recalling information about spatial environments.</dd>
+                            <dt>Collaborative Filtering</dt>
+                            <dd>A recommendation system technique that makes predictions about a user's interests by collecting preferences from many users.</dd>
+                            <dt>Content Delivery Network (CDN)</dt>
+                            <dd>A distributed network of servers that delivers web content to users based on their geographic location, improving speed and reliability.</dd>
+                            <dt>Coordinate Reference System (CRS)</dt>
+                            <dd>A framework used to define the position of points in space. Examples include WGS84 and British National Grid.</dd>
+                            <dt>Crowdsourcing</dt>
+                            <dd>Obtaining information or input for a task by enlisting the services of a large number of people, typically via the internet.</dd>
+                        </dl>
+                    </div>
+                </div>
+                
+                <!-- D -->
+                <div class="card mb-3">
+                    <div class="card-header h2" id="D">D</div>
+                    <div class="card-body">
+                        <dl>
+                            <dt>Data Model</dt>
+                            <dd>An abstract model that organises elements of data and standardises how they relate to one another and to the properties of real-world entities.</dd>
+                            <dt>Data Pipeline</dt>
+                            <dd>A series of data processing steps where the output of one step is the input of the next, used for ETL (Extract, Transform, Load) operations.</dd>
+                            <dt>Dead Reckoning</dt>
+                            <dd>A method of estimating a current position based on a previously determined position, speed, and course over elapsed time.</dd>
+                            <dt>Differential Privacy</dt>
+                            <dd>A system for publicly sharing information about a dataset by describing the patterns of groups within the dataset while withholding information about individuals.</dd>
+                            <dt>Digital Twin</dt>
+                            <dd>A virtual model of a physical object or system, used for simulation and analysis.</dd>
+                            <dt>Dijkstra's Algorithm</dt>
+                            <dd>An algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks.</dd>
+                        </dl>
+                    </div>
+                </div>
+                
+                <!-- E -->
+                <div class="card mb-3">
+                    <div class="card-header h2" id="E">E</div>
+                    <div class="card-body">
+                        <dl>
+                            <dt>Elevation</dt>
+                            <dd>The height of a geographic location above a fixed reference point, usually mean sea level.</dd>
+                            <dt>ETL (Extract, Transform, Load)</dt>
+                            <dd>A data integration process that combines data from multiple sources into a single, consistent data store.</dd>
+                            <dt>Event-Driven Architecture</dt>
+                            <dd>A software architecture paradigm promoting the production, detection, consumption of, and reaction to events.</dd>
+                            <dt>Experience Sampling Method (ESM)</dt>
+                            <dd>A research methodology that asks participants to report on their thoughts, feelings, and environment on multiple occasions over time.</dd>
+                        </dl>
+                    </div>
+                </div>
+                
+                <!-- F -->
+                <div class="card mb-3">
+                    <div class="card-header h2" id="F">F</div>
+                    <div class="card-body">
+                        <dl>
+                            <dt>FAIR Principles</dt>
+                            <dd>A set of guiding principles for scientific data management and stewardship, ensuring data is Findable, Accessible, Interoperable, and Reusable.</dd>
+                            <dt>Federated Learning</dt>
+                            <dd>A machine learning technique that trains an algorithm across multiple decentralised devices or servers holding local data samples, without exchanging them.</dd>
+                            <dt>Folksonomy</dt>
+                            <dd>A classification system created by users through the process of social tagging.</dd>
+                        </dl>
+                    </div>
+                </div>
+                
+                <!-- G -->
+                <div class="card mb-3">
+                    <div class="card-header h2" id="G">G</div>
+                    <div class="card-body">
+                        <dl>
+                            <dt>Geocoding</dt>
+                            <dd>The process of converting addresses into geographic coordinates (latitude and longitude).</dd>
+                            <dt>Geofencing</dt>
+                            <dd>A virtual perimeter for a real-world geographic area. A geofence can trigger an action when a device enters or leaves the area.</dd>
+                            <dt>GeoJSON</dt>
+                            <dd>An open standard format for representing simple geographic features, along with their non-spatial attributes.</dd>
+                            <dt>Geospatial</dt>
+                            <dd>Relating to data that has a geographic component, meaning it is associated with a specific location on Earth.</dd>
+                            <dt>GIS (Geographic Information System)</dt>
+                            <dd>A system designed to capture, store, manipulate, analyse, manage, and present all types of geographical data.</dd>
+                            <dt>GPS (Global Positioning System)</dt>
+                            <dd>A satellite-based navigation system providing location and time information in all weather conditions, anywhere on or near the Earth.</dd>
+                            <dt>Graph Database</dt>
+                            <dd>A database that uses graph structures for semantic queries with nodes, edges, and properties to represent and store data.</dd>
+                        </dl>
+                    </div>
+                </div>
+                
+                <!-- H -->
+                <div class="card mb-3">
+                    <div class="card-header h2" id="H">H</div>
+                    <div class="card-body">
+                        <dl>
+                            <dt>H3</dt>
+                            <dd>A hexagonal hierarchical geospatial indexing system developed by Uber. It partitions the Earth into hexagonal cells at different resolutions, useful for aggregating and analysing spatial data.</dd>
+                            <dt>Haptic Feedback</dt>
+                            <dd>The use of touch sensation in a user interface, such as vibrations, to provide information to the user.</dd>
+                            <dt>Heuristic Evaluation</dt>
+                            <dd>A usability inspection method that helps to identify usability problems in a user interface design.</dd>
+                            <dt>Humanistic Geography</dt>
+                            <dd>A branch of geography that focuses on the subjective human experience of place, space, and environment.</dd>
+                        </dl>
+                    </div>
+                </div>
+                
+                <!-- I -->
+                <div class="card mb-3">
+                    <div class="card-header h2" id="I">I</div>
+                    <div class="card-body">
+                        <dl>
+                            <dt>IMU (Inertial Measurement Unit)</dt>
+                            <dd>An electronic device that measures and reports a body's specific force, angular rate, and sometimes orientation, using accelerometers and gyroscopes.</dd>
+                            <dt>Inclusive Design</dt>
+                            <dd>The practice of designing products and services to be accessible to and usable by as many people as reasonably possible without the need for special adaptation.</dd>
+                            <dt>Interoperability</dt>
+                            <dd>The ability of different information systems, devices and applications to access, exchange, integrate and cooperatively use data in a coordinated manner.</dd>
+                            <dt>ISO 19115</dt>
+                            <dd>An international standard for geographic information metadata, defining the schema for describing geographic information and services.</dd>
+                        </dl>
+                    </div>
+                </div>
+                
+                <!-- J -->
+                <div class="card mb-3">
+                    <div class="card-header h2" id="J">J</div>
+                    <div class="card-body">
+                        <dl>
+                            <dt>JSON (JavaScript Object Notation)</dt>
+                            <dd>A lightweight data-interchange format that is easy for humans to read and write and easy for machines to parse and generate.</dd>
+                        </dl>
+                    </div>
+                </div>
+                
+                <!-- K -->
+                <div class="card mb-3">
+                    <div class="card-header h2" id="K">K</div>
+                    <div class="card-body">
+                        <dl>
+                            <dt>KML (Keyhole Markup Language)</dt>
+                            <dd>An XML-based file format for representing geographic data in an Earth browser such as Google Earth.</dd>
+                        </dl>
+                    </div>
+                </div>
+                
+                <!-- L -->
+                <div class="card mb-3">
+                    <div class="card-header h2" id="L">L</div>
+                    <div class="card-body">
+                        <dl>
+                            <dt>Landmark</dt>
+                            <dd>A recognisable natural or artificial feature used for navigation; a key component in human spatial cognition.</dd>
+                            <dt>Layered Architecture</dt>
+                            <dd>A software architecture pattern that organises components into horizontal layers, such as presentation, application, and data layers.</dd>
+                            <dt>Lidar (Light Detection and Ranging)</dt>
+                            <dd>A remote sensing method that uses light in the form of a pulsed laser to measure ranges (variable distances) to the Earth.</dd>
+                            <dt>Longitudinal Study</dt>
+                            <dd>A research design that involves repeated observations of the same variables over long periods of time.</dd>
+                        </dl>
+                    </div>
+                </div>
+                
+                <!-- M -->
+                <div class="card mb-3">
+                    <div class="card-header h2" id="M">M</div>
+                    <div class="card-body">
+                        <dl>
+                            <dt>Machine Learning</dt>
+                            <dd>The scientific study of algorithms and statistical models that computer systems use to perform a specific task without using explicit instructions, relying on patterns and inference instead.</dd>
+                            <dt>Metadata</dt>
+                            <dd>Data that provides information about other data. For example, metadata for a photograph may include the date it was taken and the camera settings.</dd>
+                            <dt>Microservices Architecture</dt>
+                            <dd>An architectural style that structures an application as a collection of loosely coupled, independently deployable services.</dd>
+                            <dt>Mixed-Methods Research</dt>
+                            <dd>A research approach that combines both quantitative and qualitative research methods.</dd>
+                            <dt>Multi-Criteria Route Optimisation</dt>
+                            <dd>The process of finding a route that balances multiple objectives, such as shortest distance, lowest elevation gain, and highest scenic value.</dd>
+                        </dl>
+                    </div>
+                </div>
+                
+                <!-- N -->
+                <div class="card mb-3">
+                    <div class="card-header h2" id="N">N</div>
+                    <div class="card-body">
+                        <dl>
+                            <dt>Natural Language Processing (NLP)</dt>
+                            <dd>A field of artificial intelligence that enables computers to understand, interpret, and manipulate human language.</dd>
+                            <dt>NDCG (Normalized Discounted Cumulative Gain)</dt>
+                            <dd>A measure of ranking quality used in information retrieval to evaluate the effectiveness of a recommendation or search result list.</dd>
+                            <dt>Network Analysis</dt>
+                            <dd>A set of GIS operations used to analyse networks, such as road networks, to find shortest paths or service areas.</dd>
+                        </dl>
+                    </div>
+                </div>
+                
+                <!-- O -->
+                <div class="card mb-3">
+                    <div class="card-header h2" id="O">O</div>
+                    <div class="card-body">
+                        <dl>
+                            <dt>Ontology</dt>
+                            <dd>A formal, explicit specification of a shared conceptualisation. In information science, it is a way of representing knowledge and relationships between concepts.</dd>
+                            <dt>Open Data</dt>
+                            <dd>Data that can be freely used, re-used and redistributed by anyone - subject only, at most, to the requirement to attribute and sharealike.</dd>
+                            <dt>OpenStreetMap (OSM)</dt>
+                            <dd>A collaborative project to create a free, editable map of the world.</dd>
+                            <dt>Optimisation</dt>
+                            <dd>The process of making something (such as a design, system, or decision) as fully perfect, functional, or effective as possible.</dd>
+                        </dl>
+                    </div>
+                </div>
+                
+                <!-- P -->
+                <div class="card mb-3">
+                    <div class="card-header h2" id="P">P</div>
+                    <div class="card-body">
+                        <dl>
+                            <dt>Participatory Design</dt>
+                            <dd>An approach to design that attempts to actively involve all stakeholders (e.g., employees, partners, customers, citizens, end users) in the design process.</dd>
+                            <dt>Pedestrian Dead Reckoning (PDR)</dt>
+                            <dd>A technique for estimating a pedestrian's location by tracking their steps and heading using sensors like accelerometers and gyroscopes.</dd>
+                            <dt>Phenomenology</dt>
+                            <dd>A philosophical approach that focuses on the study of subjective, lived experience.</dd>
+                            <dt>Place</dt>
+                            <dd>A location imbued with human meaning, memory, and social significance, distinct from the abstract, geometric concept of space.</dd>
+                            <dt>Point of Interest (POI)</dt>
+                            <dd>A specific point location that someone may find useful or interesting.</dd>
+                            <dt>PostGIS</dt>
+                            <dd>A spatial database extender for PostgreSQL object-relational database. It adds support for geographic objects allowing location queries to be run in SQL.</dd>
+                            <dt>Precision</dt>
+                            <dd>A measure of a model's performance that quantifies the proportion of positive identifications that were actually correct.</dd>
+                            <dt>Progressive Web App (PWA)</dt>
+                            <dd>A type of application software delivered through the web, built using common web technologies including HTML, CSS and JavaScript.</dd>
+                        </dl>
+                    </div>
+                </div>
+                
+                <!-- Q -->
+                <div class="card mb-3">
+                    <div class="card-header h2" id="Q">Q</div>
+                    <div class="card-body">
+                        <dl>
+                            <dt>Qualitative Data</dt>
+                            <dd>Data that is descriptive and conceptual, collected through methods such as interviews, observations, and focus groups.</dd>
+                            <dt>Quantitative Data</dt>
+                            <dd>Data that can be counted, measured, and expressed using numbers.</dd>
+                        </dl>
+                    </div>
+                </div>
+                
+                <!-- R -->
+                <div class="card mb-3">
+                    <div class="card-header h2" id="R">R</div>
+                    <div class="card-body">
+                        <dl>
+                            <dt>Raster Data</dt>
+                            <dd>A type of spatial data that consists of a matrix of cells (or pixels) organised into rows and columns where each cell contains a value representing information.</dd>
+                            <dt>Recall</dt>
+                            <dd>A measure of a model's performance that quantifies the proportion of actual positives that were identified correctly.</dd>
+                            <dt>Recommendation System</dt>
+                            <dd>A subclass of information filtering system that seeks to predict the "rating" or "preference" a user would give to an item.</dd>
+                            <dt>REST (Representational State Transfer)</dt>
+                            <dd>An architectural style for designing networked applications, often used for creating web APIs.</dd>
+                            <dt>Reverse Geocoding</dt>
+                            <dd>The process of converting geographic coordinates into a human-readable address.</dd>
+                        </dl>
+                    </div>
+                </div>
+                
+                <!-- S -->
+                <div class="card mb-3">
+                    <div class="card-header h2" id="S">S</div>
+                    <div class="card-body">
+                        <dl>
+                            <dt>Schema</dt>
+                            <dd>The structure or organisation of a database or data model.</dd>
+                            <dt>Semantic Annotation</dt>
+                            <dd>The process of adding metadata to data to describe its meaning, making it more understandable to machines.</dd>
+                            <dt>Sense of Place</dt>
+                            <dd>The subjective and emotional attachment people have to a location.</dd>
+                            <dt>Serendipity</dt>
+                            <dd>In recommendation systems, the quality of providing recommendations that are surprising yet relevant and useful to the user.</dd>
+                            <dt>Spatial Cognition</dt>
+                            <dd>How people acquire and use knowledge about their spatial environment to navigate it.</dd>
+                            <dt>Spatial Indexing</dt>
+                            <dd>A data structure that allows for efficient querying of spatial data, such as finding all points within a certain distance of another point.</dd>
+                            <dt>SQL (Structured Query Language)</dt>
+                            <dd>A standard language for storing, manipulating and retrieving data in databases.</dd>
+                        </dl>
+                    </div>
+                </div>
+                
+                <!-- T -->
+                <div class="card mb-3">
+                    <div class="card-header h2" id="T">T</div>
+                    <div class="card-body">
+                        <dl>
+                            <dt>Taxonomy</dt>
+                            <dd>A hierarchical classification of entities of interest.</dd>
+                            <dt>Temporal Data</dt>
+                            <dd>Data that represents a state in time, such as the opening hours of a shop or historical weather patterns.</dd>
+                            <dt>Think-Aloud Protocol</dt>
+                            <dd>A usability testing method where participants verbalise their thoughts as they interact with a system, providing insights into their mental processes and reasoning.</dd>
+                            <dt>Topology</dt>
+                            <dd>In GIS, the spatial relationships between adjacent or connected features, such as how roads connect at intersections.</dd>
+                            <dt>Topophilia</dt>
+                            <dd>Coined by Yi-Fu Tuan, it refers to the love of or emotional connection to a place.</dd>
+                        </dl>
+                    </div>
+                </div>
+                
+                <!-- U -->
+                <div class="card mb-3">
+                    <div class="card-header h2" id="U">U</div>
+                    <div class="card-body">
+                        <dl>
+                            <dt>UI (User Interface)</dt>
+                            <dd>The point of human-computer interaction and communication in a device.</dd>
+                            <dt>Usability</dt>
+                            <dd>The ease of use and learnability of a human-made object such as a tool or device.</dd>
+                            <dt>User-Centred Design (UCD)</dt>
+                            <dd>A design philosophy that places the user's needs, wants, and limitations at the centre of the design process.</dd>
+                            <dt>UX (User Experience)</dt>
+                            <dd>A person's perceptions and responses that result from the use or anticipated use of a product, system or service.</dd>
+                        </dl>
+                    </div>
+                </div>
+                
+                <!-- V -->
+                <div class="card mb-3">
+                    <div class="card-header h2" id="V">V</div>
+                    <div class="card-body">
+                        <dl>
+                            <dt>Vector Data</dt>
+                            <dd>A type of spatial data that represents geographic features as points, lines, and polygons.</dd>
+                            <dt>Volunteered Geographic Information (VGI)</dt>
+                            <dd>Geographic information generated voluntarily by individuals, often through crowdsourcing projects like OpenStreetMap.</dd>
+                        </dl>
+                    </div>
+                </div>
+                
+                <!-- W -->
+                <div class="card mb-3">
+                    <div class="card-header h2" id="W">W</div>
+                    <div class="card-body">
+                        <dl>
+                            <dt>Wayfinding</dt>
+                            <dd>The cognitive processes involved in navigating through an environment.</dd>
+                            <dt>Web Mercator</dt>
+                            <dd>A widely used projection for web mapping, notable for its preservation of shape and angles but significant distortion of area at high latitudes.</dd>
+                            <dt>WGS84 (World Geodetic System 1984)</dt>
+                            <dd>A standard for use in cartography, geodesy, and satellite navigation including GPS.</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark p-4">
+        <div class="container text-center text-white">
+            <div class="row">
+                <div class="col-md-3 align-self-center">
+                    <a href="https://nottingham.ac.uk/">
+                        <img class="img-fluid p-2" src="../images/funding-logos/Nottingham.png">
+                    </a>
+                </div>
+                <div class="col-md-3 align-self-center">
+                    <a href="https://cdt.horizon.ac.uk/">
+                        <img class="img-fluid p-2" src="../images/funding-logos/horizon.webp">
+                    </a>
+                </div>
+                <div class="col-md-3 align-self-center">
+                </div>
+                <div class="col-md-3 align-self-center">
+                    <a href="https://www.ukri.org/councils/epsrc/">
+                        <img class="img-fluid p-2" src="../images/funding-logos/ukri.webp">
+                    </a>
+                </div>
+            </div>
+            <p class="mt-4">This activity was supported by the Horizon CDT Impact Grant, made possible through funding
+                from the Engineering and Physical Sciences Research Council (EPSRC) [grant number EP/S023305/1].</p>
+            <hr>
+            <p>Website and initial organisation by <a class="text-white" href="https://jwilliams.science/">James
+                    Williams</a> | <a class="text-white" href="../imports/sources.md">Attribution</a></p>
+        </div>
+    </footer>
+    <script src="../imports/Bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

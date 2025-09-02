@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Experience Design Principles for Walking Apps | Documentation | LWSWG</title>
+    <meta name="description" content="User experience design principles and best practices for walking applications, covering usability, accessibility, mobile design, and pedestrian-specific interface considerations.">
+    <meta name="keywords" content="user experience, UX design, walking apps, mobile design, accessibility, usability, pedestrian interfaces, navigation design">
+    <link rel="canonical" href="https://lwswg.jwilliams.science/documentation/user-experience.html">
+
+    <link rel="icon" type="image/png" href="../images/favicon-48x48.png" sizes="48x48" />
+    <link href="../imports/Bootswatch/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../images/lwswg-logo.png" alt="LWSWG (Leisure Walking Systems Working Group) Logo"
+                        height="52">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="main-nav">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="../index.html">Home</a>
+                        <a class="nav-link" href="../about.html">About</a>
+                        <a class="nav-link" href="../meetings.html">Meetings</a>
+                        <a class="nav-link" href="../resources.html">Resources</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" aria-current="page" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Research Hub
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="documentation/">Documentation Home</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="recommendation-systems.html">Recommendation Systems</a></li>
+                                <li><a class="dropdown-item" href="geospatial-integration.html">Geospatial Data Integration</a></li>
+                                <li><a class="dropdown-item" href="place-representation.html">Place Representation</a></li>
+                                <li><a class="dropdown-item" href="data-sharing.html">Data Sharing Standards</a></li>
+                                <li><a class="dropdown-item" href="route-algorithms.html">Walking Route Algorithms</a></li>
+                                <li><a class="dropdown-item active" aria-current="page" href="user-experience.html">User Experience Design</a></li>
+                                <li><a class="dropdown-item" href="technical-architecture.html">Technical Architecture</a></li>
+                                <li><a class="dropdown-item" href="research-methodology.html">Research Methodology</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="checklist.html">Implementation Checklist</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Impact Outputs
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><h6 class="dropdown-header">Month 1</h6></li>
+                                <li><a class="dropdown-item" href="../impact/benefits.html">Benefits and Market Differentiators</a></li>
+                                <li><a class="dropdown-item" href="../impact/digital.html">Digital Presence</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><h6 class="dropdown-header">Month 2</h6></li>
+                                <li><a class="dropdown-item" href="../impact/demonstrator.html">Demonstrator System</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><h6 class="dropdown-header">Month 3</h6></li>
+                                <li><a class="dropdown-item" href="../impact/technical-report.html">Initial Technical Report</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="main-header" class="">
+            <div class="container">
+                <div class="card p-4 bg-dark-transparent text-white">
+                    <div class="row">
+                        <div class="col-md-4 align-self-center">
+                            <img id="main-logo" class="img-fluid mx-auto d-block my-2" src="../images/lwswg-logo.png"
+                                alt="Leisure Walking Systems Working Group">
+                        </div>
+                        <div class="col-md-8 align-self-center">
+                            <h1>User Experience Design Principles</h1>
+                            <p class="lead mb-0">Creating intuitive and accessible walking applications that serve diverse user needs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2>Introduction to Walking App UX Design</h2>
+                            <p>User experience design for walking applications requires understanding the unique context of pedestrian movement, including environmental factors, safety considerations, diverse user capabilities, and the integration of digital interfaces with physical navigation.</p>
+                            
+                            <p>Walking apps must balance information richness with interface simplicity, providing relevant guidance without overwhelming users who are actively moving through complex environments.</p>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2>Core UX Principles for Walking Apps</h2>
+                            
+                            <h3>Context-Aware Design</h3>
+                            <p>Context-aware design acknowledges and adapts to the dynamic nature of the user's walking environment and circumstances. Environmental awareness involves automatically adjusting interface brightness, contrast, and size to ensure optimal visibility in changing outdoor lighting conditions. Movement adaptation recognises that users often operate walking applications whilst in motion, necessitating design for one-handed use and larger touch targets. Attention management prioritises user safety over interface interaction, ensuring that essential navigation information can be accessed without compromising awareness of surroundings. Situational relevance ensures that displayed information remains appropriate to the user's current location and walking context.</p>
+
+                            <h3>Accessibility and Inclusive Design</h3>
+                            <p>Inclusive design ensures that walking applications serve users with diverse abilities, technological familiarity, and accessibility requirements. Visual accessibility encompasses high contrast colour schemes, adjustable text sizes, and comprehensive screen reader compatibility that enables users with visual impairments to navigate effectively. Motor accessibility considerations include large touch targets that accommodate limited dexterity, voice input alternatives for hands-free operation, and simplified gestures that reduce the complexity of physical interaction. Cognitive accessibility principles promote clear navigation structures, consistent interface patterns, and reduced cognitive load that benefits users with cognitive differences or those operating under high stress or distraction. Mobility considerations ensure that route suggestions account for wheelchair accessibility, include information about rest stops and accessible facilities, and provide options for users with varying levels of physical capability.</p>
+
+                            <h3>Safety-First Interface Design</h3>
+                            <p>Prioritising user safety is paramount in the design of walking application interfaces, which should minimise distraction and allow users to remain aware of their surroundings. This can be achieved through minimal visual attention requirements, where audio cues and haptic feedback reduce dependency on the screen. Information should be glanceable, with key details designed to be understood in a quick glance rather than requiring prolonged focus. Quick and easy emergency access is also a critical feature, allowing users to rapidly share their location or contact emergency services. Furthermore, the interface should promote traffic awareness, potentially adapting its display or alerts when the user is approaching busy streets or complex crossings.</p>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2>Navigation Interface Design</h2>
+                            
+                            <h3>Wayfinding Information Architecture</h3>
+                            <p>An intuitive wayfinding information architecture is essential for effective navigation. The principle of progressive disclosure should be used to reveal information as it becomes relevant, avoiding overwhelming the user at the start of a journey. Landmark-based navigation, which uses recognisable features for orientation, is often more effective for pedestrians than street names alone. Clear and contextual communication of distance and time remaining helps users to manage their journey effectively. The system should also provide multiple levels of navigation detail, allowing users to switch between a high-level route overview and detailed step-by-step instructions as needed.</p>
+
+                            <h3>Map Design for Pedestrians</h3>
+                            <p>Map interfaces for walking navigation require specialised design considerations that differ from vehicle-centric maps. The map should emphasise pedestrian-focused features such as public walkways, stairs, pedestrian crossings, and accessible paths, while de-emphasising road-centric information. The scale and level of detail must be optimised for walking speed, providing sufficient context without unnecessary clutter. Orientation aids, such as clear compass integration and the highlighting of prominent landmarks, help users to align the map with their physical surroundings. Finally, route visualisation should be clear and unambiguous, with particular attention paid to highlighting key decision points such as turns or junctions.</p>
+
+                            <h3>Audio and Haptic Guidance</h3>
+                            <p>Non-visual navigation aids are critical for a safe, hands-free walking experience. Clear and timely voice instructions provide turn-by-turn guidance without requiring the user to look at the screen. Where supported by the device, spatial audio can offer more intuitive directional sound cues. Haptic feedback, using distinct vibration patterns to signify upcoming turns or alerts, is another powerful tool for non-visual communication. The overall sound design should be carefully considered, with distinctive and easily learnable audio cues for different types of navigation events and notifications.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4><i class="bi bi-person-check-fill text-success"></i> User-Centered Design</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Conduct user research in real walking contexts</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Test with diverse user groups</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Iterate based on field testing</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Consider accessibility from the start</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4><i class="bi bi-shield-check text-warning"></i> Safety Guidelines</h4>
+                            <ul class="small">
+                                <li><strong>Eyes-free operation:</strong> Minimize visual attention requirements</li>
+                                <li><strong>Audio alternatives:</strong> Provide voice-based interactions</li>
+                                <li><strong>Emergency features:</strong> Quick access to help functions</li>
+                                <li><strong>Situational awareness:</strong> Avoid interface elements that distract from environment</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4><i class="bi bi-universal-access text-info"></i> Accessibility Standards</h4>
+                            <ul class="small">
+                                <li><strong>WCAG 2.1:</strong> Web Content Accessibility Guidelines</li>
+                                <li><strong>Section 508:</strong> US Federal accessibility requirements</li>
+                                <li><strong>EN 301 549:</strong> European accessibility standard</li>
+                                <li><strong>Platform guidelines:</strong> iOS and Android accessibility best practices</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4><i class="bi bi-tools text-primary"></i> Design Tools</h4>
+                            <ul class="small">
+                                <li>Figma, Sketch for interface design</li>
+                                <li>Principle, Framer for prototyping</li>
+                                <li>UsabilityHub for user testing</li>
+                                <li>Mapbox, Google Maps for map integration</li>
+                                <li>ColorBrewer for accessible color schemes</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h4><i class="bi bi-book text-info"></i> Related Topics</h4>
+                            <div class="d-grid gap-2">
+                                <a href="place-representation.html" class="btn btn-outline-primary btn-sm">Place Representation</a>
+                                <a href="recommendation-systems.html" class="btn btn-outline-primary btn-sm">Recommendation Systems</a>
+                                <a href="research-methodology.html" class="btn btn-outline-primary btn-sm">Research Methodology</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark p-4">
+        <div class="container text-center text-white">
+            <div class="row">
+                <div class="col-md-3 align-self-center">
+                    <a href="https://nottingham.ac.uk/">
+                        <img class="img-fluid p-2" src="../images/funding-logos/Nottingham.png">
+                    </a>
+                </div>
+                <div class="col-md-3 align-self-center">
+                    <a href="https://cdt.horizon.ac.uk/">
+                        <img class="img-fluid p-2" src="../images/funding-logos/horizon.webp">
+                    </a>
+                </div>
+                <div class="col-md-3 align-self-center">
+                </div>
+                <div class="col-md-3 align-self-center">
+                    <a href="https://www.ukri.org/councils/epsrc/">
+                        <img class="img-fluid p-2" src="../images/funding-logos/ukri.webp">
+                    </a>
+                </div>
+            </div>
+            <p class="mt-4">This activity was supported by the Horizon CDT Impact Grant, made possible through funding
+                from the Engineering and Physical Sciences Research Council (EPSRC) [grant number EP/S023305/1].</p>
+            <hr>
+            <p>Website and initial organisation by <a class="text-white" href="https://jwilliams.science/">James
+                    Williams</a> | <a class="text-white" href="../imports/sources.md">Attribution</a></p>
+        </div>
+    </footer>
+    <script src="../imports/Bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

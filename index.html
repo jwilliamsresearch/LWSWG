@@ -4,11 +4,67 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Leisure Walking Systems Working Group</title>
+    <title>Leisure Walking Systems Working Group | LWSWG - Technical Documentation & Research Resources</title>
+    <meta name="description" content="The Leisure Walking Systems Working Group (LWSWG) provides comprehensive technical documentation, best practices, and research resources for developing walking systems and pedestrian navigation applications.">
+    <meta name="keywords" content="leisure walking, walking systems, place representation, geospatial data, walking apps, platial information, walking routes, location-based services, GIS, walking research, technical documentation">
+    <meta name="author" content="James Williams, University of Nottingham">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://lwswg.jwilliams.science/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lwswg.jwilliams.science/">
+    <meta property="og:title" content="Leisure Walking Systems Working Group | LWSWG">
+    <meta property="og:description" content="Advancing research in shared and interoperable representations of place in leisure walking systems through academic-industry collaboration.">
+    <meta property="og:image" content="https://lwswg.jwilliams.science/images/lwswg-logo.png">
+    <meta property="og:site_name" content="LWSWG">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://lwswg.jwilliams.science/">
+    <meta property="twitter:title" content="Leisure Walking Systems Working Group | LWSWG">
+    <meta property="twitter:description" content="Advancing research in shared and interoperable representations of place in leisure walking systems through academic-industry collaboration.">
+    <meta property="twitter:image" content="https://lwswg.jwilliams.science/images/lwswg-logo.png">
 
     <link rel="icon" type="image/png" href="/images/favicon-48x48.png" sizes="48x48" />
     <link href="imports/Bootswatch/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ResearchProject",
+        "name": "Leisure Walking Systems Working Group",
+        "alternateName": "LWSWG",
+        "description": "A research project focused on understanding challenges in shared and interoperable representations of place in leisure walking systems",
+        "url": "https://lwswg.jwilliams.science/",
+        "logo": "https://lwswg.jwilliams.science/images/lwswg-logo.png",
+        "foundingDate": "2024",
+        "founder": {
+            "@type": "Person",
+            "name": "James Williams",
+            "url": "https://jwilliams.science/",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "University of Nottingham",
+                "url": "https://nottingham.ac.uk/"
+            }
+        },
+        "parentOrganization": {
+            "@type": "Organization",
+            "name": "Horizon Centre for Doctoral Training",
+            "url": "https://cdt.horizon.ac.uk/"
+        },
+        "funder": {
+            "@type": "Organization", 
+            "name": "Engineering and Physical Sciences Research Council",
+            "alternateName": "EPSRC",
+            "url": "https://www.ukri.org/councils/epsrc/"
+        },
+        "keywords": ["leisure walking", "walking systems", "place representation", "geospatial data", "platial information"]
+    }
+    </script>
 </head>
 
 <body>
@@ -28,6 +84,27 @@
                         <a class="nav-link active" href="/">Home</a>
                         <a class="nav-link" aria-current="page" href="about.html">About</a>
                         <a class="nav-link" href="meetings.html">Meetings</a>
+                        <a class="nav-link" href="resources.html">Resources</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Research Hub
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="documentation/">Documentation Home</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="documentation/recommendation-systems.html">Recommendation Systems</a></li>
+                                <li><a class="dropdown-item" href="documentation/geospatial-integration.html">Geospatial Data Integration</a></li>
+                                <li><a class="dropdown-item" href="documentation/place-representation.html">Place Representation</a></li>
+                                <li><a class="dropdown-item" href="documentation/data-sharing.html">Data Sharing Standards</a></li>
+                                <li><a class="dropdown-item" href="documentation/route-algorithms.html">Walking Route Algorithms</a></li>
+                                <li><a class="dropdown-item" href="documentation/user-experience.html">User Experience Design</a></li>
+                                <li><a class="dropdown-item" href="documentation/technical-architecture.html">Technical Architecture</a></li>
+                                <li><a class="dropdown-item" href="documentation/research-methodology.html">Research Methodology</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="documentation/checklist.html">Implementation Checklist</a></li>
+                            </ul>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
@@ -51,21 +128,22 @@
         </nav>
         <div id="main-header" class="">
             <div class="container">
-                <div class="card p-4 bg-dark-transparent text-center text-white">
-                    <img id="main-logo" class="img-fluid mx-auto d-block mb-4" src="/images/lwswg-logo.png"
-                        alt="Leisure Walking Systems Working Group" data-tilt data-tilt-full-page-listening data-tilt-reset="false" data-tilt-glare data-tilt-max-glare="0.8">
-                    <h1>Discussing best practices and opportunities for representing place in leisure walking
-                        systems.</h1>
-                    <div class="alert alert-success bg-success m-0 mt-2 d-flex align-items-center text-white">
-                        <img class="info-image d-none d-lg-block img-fluid" src="images/platialnetwork.png" style="max-height: 80px;">
-                        <div class="ms-4 lh-1">
-                            <h4 class="mb-0 text-start">Interested in Digital Platial Information?</h4>
-                            <small>We are currently exploring the formation of a Platial Research Network: <a class="text-white" href="https://platialnetwork.jwilliams.science/">https://platialnetwork.jwilliams.science/</a>
-                        </small>
+                <div class="card p-4 bg-dark-transparent text-white">
+                    <div class="row">
+                        <div class="col-md-4 align-self-center">
+                            <img id="main-logo" class="img-fluid mx-auto d-block my-2" src="/images/lwswg-logo.png"
+                                alt="Leisure Walking Systems Working Group" data-tilt data-tilt-full-page-listening data-tilt-reset="false" data-tilt-glare data-tilt-max-glare="0.8">
+                        </div>
+                        <div class="col-md-8 align-self-center">
+                            <h1>Leisure Walking Systems Working Group</h1>
+                            <p class="lead mb-2">Understanding challenges in shared and interoperable representations of place in leisure walking systems</p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-success">Technical Documentation</span>
+                                <span class="badge bg-info">Best Practices</span>
+                                <span class="badge bg-warning text-dark">Implementation Guides</span>
+                            </div>
+                        </div>
                     </div>
-                    </div>
-                    <div class="alert alert-info mt-2" role="alert">
-                        This website is currently a work-in-progress, all content and information is subject to change.
                     </div>
                 </div>
             </div>
@@ -102,35 +180,82 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-body">
-                    <p>The Leisure Walking Systems Working Group (LWSWG) is an effort to understand the challenges in
-                        shared and interoperable representations of place in leisure walking systems. Working towards a
-                        group of leisure walking researchers and practitioners interested in better
-                        representing place in leisure walking systems. The group seeks to draw members from private,
-                        public, and third sector organisations to form a
-                        new understanding of leisure walking applications and applicable challenges.</p>
+            <h2 class="mt-4">Expert Resources for Walking System Development</h2>
+                            <div class="card">
+                    <div class="card-body">
+                        <p>The Leisure Walking Systems Working Group (LWSWG) provides comprehensive technical documentation and practical guidance for developers, researchers, and practitioners working with pedestrian navigation systems. Our resources cover everything from fundamental algorithms to user experience design principles.</p>
+                        
+                        <p>Developed through academic-industry collaboration, these resources address real-world challenges in walking system development, offering evidence-based solutions and best practices that can be immediately applied to development projects.</p>
+                        
+                        <div class="row mt-3">
+                            <div class="col-md-3 text-center">
+                                <h4><i class="bi bi-journal-code text-primary"></i></h4>
+                                <h5>8+ Technical Guides</h5>
+                                <p class="small text-muted">Comprehensive documentation covering all aspects of walking system development</p>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <h4><i class="bi bi-check-all text-success"></i></h4>
+                                <h5>Implementation Checklist</h5>
+                                <p class="small text-muted">Step-by-step guidance for successful project deployment</p>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <h4><i class="bi bi-tools text-warning"></i></h4>
+                                <h5>Practical Tools</h5>
+                                <p class="small text-muted">Curated collection of essential development resources</p>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <h4><i class="bi bi-mortarboard text-info"></i></h4>
+                                <h5>Research Methods</h5>
+                                <p class="small text-muted">Rigorous approaches to studying walking systems</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <h2 class="mt-4">Goal Statement</h2>
-            <div class="card">
-                <div class="card-body">
-                    <p>During the 3-month Horizon Centre for Doctoral Training Impact Grant, the LWSWG will collaborate
-                        with academics and industry to understand the challenges in sharing data, interoperable systems,
-                        and representations of place in leisure walking systems. This will be achieved through the organisation of meetings,
-                        working documents, and this digital presence. </p>
-                    <a type="button" class="btn btn-outline-success float-end" href="./about.html">About the LWSWG <i class="bi bi-arrow-right"></i></a>
-
+            <h2 class="mt-4">Quick Start Guide</h2>
+                            <div class="card">
+                    <div class="card-body">
+                        <p>Get started with walking system development using our comprehensive resources. Whether you're building route algorithms, implementing recommendation systems, or designing user interfaces, our documentation provides practical guidance for every step of the development process.</p>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card bg-light">
+                                    <div class="card-body">
+                                        <h5><i class="bi bi-play-circle text-primary"></i> New to Walking Systems?</h5>
+                                        <p class="mb-3">Start with our comprehensive documentation home page for an overview of key concepts and implementation approaches.</p>
+                                        <a class="btn btn-primary w-100" href="./documentation/">Begin Learning <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card bg-light">
+                                    <div class="card-body">
+                                        <h5><i class="bi bi-list-check text-success"></i> Ready to Implement?</h5>
+                                        <p class="mb-3">Use our implementation checklist to ensure you've covered all essential aspects of walking system development.</p>
+                                        <a class="btn btn-success w-100" href="./documentation/checklist.html">View Checklist <i class="bi bi-check-all"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <h2 class="mt-4">Supporting Documentation</h2>
+            <h2 class="mt-4">Comprehensive Technical Resources</h2>
             <div class="card">
                 <div class="card-body">
-                    <p>To share the findings on the organisation of the LWSWG and the wider impact grant, a public GitHub repository has been set-up for sharing the pages of this website and the documentation formed throughout the project. </p>
-                    <p>The GitHub repository will provide a digital presence of the group, and enhance long-term archiving of the findings of the project. </p>
-                    <a type="button" class="btn btn-outline-success float-end"
-                        href="https://github.com/jwilliamsresearch/LWSWG">View the GitHub <i class="bi bi-arrow-right"></i></a>
-
+                    <p>The LWSWG has developed extensive technical documentation covering all aspects of walking systems research and development. This resource encompasses recommendation systems, geospatial data integration, place representation frameworks, and practical implementation guidance.</p>
+                    
+                    <p>A public GitHub repository provides digital presence for the group and ensures long-term archiving of project findings. The repository contains this website and supporting documentation developed throughout the impact grant.</p>
+                    
+                    <div class="row mt-3">
+                        <div class="col-md-4">
+                            <a type="button" class="btn btn-outline-success w-100" href="./documentation/">Technical Documentation <i class="bi bi-book-fill"></i></a>
+                        </div>
+                        <div class="col-md-4">
+                            <a type="button" class="btn btn-outline-info w-100" href="./resources.html">Resources & Tools <i class="bi bi-tools"></i></a>
+                        </div>
+                        <div class="col-md-4">
+                            <a type="button" class="btn btn-outline-primary w-100" href="https://github.com/jwilliamsresearch/LWSWG">View GitHub <i class="bi bi-github"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

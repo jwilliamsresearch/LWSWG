@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resources and Tools for Walking Systems Research | LWSWG</title>
+    <meta name="description" content="Comprehensive collection of resources, tools, datasets, and links for walking systems research and development, curated by the LWSWG community.">
+    <meta name="keywords" content="walking systems resources, tools, datasets, APIs, research resources, open source tools, GIS tools, walking apps">
+    <link rel="canonical" href="https://lwswg.jwilliams.science/resources.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lwswg.jwilliams.science/resources.html">
+    <meta property="og:title" content="Resources and Tools for Walking Systems Research | LWSWG">
+    <meta property="og:description" content="Comprehensive collection of resources, tools, datasets, and links for walking systems research and development.">
+    <meta property="og:image" content="https://lwswg.jwilliams.science/images/lwswg-logo.png">
+
+    <link rel="icon" type="image/png" href="images/favicon-48x48.png" sizes="48x48" />
+    <link href="imports/Bootswatch/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/lwswg-logo.png" alt="LWSWG (Leisure Walking Systems Working Group) Logo"
+                        height="52">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="main-nav">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="meetings.html">Meetings</a>
+                        <a class="nav-link active" aria-current="page" href="resources.html">Resources</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Research Hub
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="documentation/">Documentation Home</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="documentation/recommendation-systems.html">Recommendation Systems</a></li>
+                                <li><a class="dropdown-item" href="documentation/geospatial-integration.html">Geospatial Data Integration</a></li>
+                                <li><a class="dropdown-item" href="documentation/place-representation.html">Place Representation</a></li>
+                                <li><a class="dropdown-item" href="documentation/data-sharing.html">Data Sharing Standards</a></li>
+                                <li><a class="dropdown-item" href="documentation/route-algorithms.html">Walking Route Algorithms</a></li>
+                                <li><a class="dropdown-item" href="documentation/user-experience.html">User Experience Design</a></li>
+                                <li><a class="dropdown-item" href="documentation/technical-architecture.html">Technical Architecture</a></li>
+                                <li><a class="dropdown-item" href="documentation/research-methodology.html">Research Methodology</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="documentation/checklist.html">Implementation Checklist</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Impact Outputs
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><h6 class="dropdown-header">Month 1</h6></li>
+                                <li><a class="dropdown-item" href="impact/benefits.html">Benefits and Market Differentiators</a></li>
+                                <li><a class="dropdown-item" href="impact/digital.html">Digital Presence</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><h6 class="dropdown-header">Month 2</h6></li>
+                                <li><a class="dropdown-item" href="impact/demonstrator.html">Demonstrator System</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><h6 class="dropdown-header">Month 3</h6></li>
+                                <li><a class="dropdown-item" href="impact/technical-report.html">Initial Technical Report</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="main-header" class="">
+            <div class="container">
+                <div class="card p-4 bg-dark-transparent text-white">
+                    <div class="row">
+                        <div class="col-md-4 align-self-center">
+                            <img id="main-logo" class="img-fluid mx-auto d-block my-2" src="images/lwswg-logo.png"
+                                alt="Leisure Walking Systems Working Group">
+                        </div>
+                        <div class="col-md-8 align-self-center">
+                            <h1>Resources and Tools</h1>
+                            <p class="lead mb-0">Essential resources for walking systems research and development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2>Open Source Tools and Libraries</h2>
+                            
+                            <h3>Geospatial Data Processing</h3>
+                            <ul>
+                                <li><strong><a href="https://gdal.org/" class="text-decoration-none">GDAL/OGR</a></strong> - Translator library for raster and vector geospatial data formats</li>
+                                <li><strong><a href="https://www.postgis.net/" class="text-decoration-none">PostGIS</a></strong> - Spatial database extender for PostgreSQL</li>
+                                <li><strong><a href="https://geotools.org/" class="text-decoration-none">GeoTools</a></strong> - Java library for geospatial data processing</li>
+                                <li><strong><a href="https://shapely.readthedocs.io/" class="text-decoration-none">Shapely</a></strong> - Python library for geometric object manipulation</li>
+                                <li><strong><a href="https://geopandas.org/" class="text-decoration-none">GeoPandas</a></strong> - Python library for working with geospatial data in pandas</li>
+                            </ul>
+
+                            <h3>Route Planning and Navigation</h3>
+                            <ul>
+                                <li><strong><a href="https://openrouteservice.org/" class="text-decoration-none">OpenRouteService</a></strong> - Open source route planning service</li>
+                                <li><strong><a href="https://www.graphhopper.com/" class="text-decoration-none">GraphHopper</a></strong> - Fast and memory-efficient routing engine</li>
+                                <li><strong><a href="https://github.com/Project-OSRM/osrm-backend" class="text-decoration-none">OSRM</a></strong> - Open Source Routing Machine for OpenStreetMap data</li>
+                                <li><strong><a href="https://github.com/valhalla/valhalla" class="text-decoration-none">Valhalla</a></strong> - Open source routing engine and services</li>
+                            </ul>
+
+                            <h3>Mobile Development Frameworks</h3>
+                            <ul>
+                                <li><strong><a href="https://reactnative.dev/" class="text-decoration-none">React Native</a></strong> - Cross-platform mobile development framework</li>
+                                <li><strong><a href="https://flutter.dev/" class="text-decoration-none">Flutter</a></strong> - Google's UI toolkit for building mobile applications</li>
+                                <li><strong><a href="https://capacitorjs.com/" class="text-decoration-none">Capacitor</a></strong> - Cross-platform native runtime for web apps</li>
+                                <li><strong><a href="https://ionicframework.com/" class="text-decoration-none">Ionic</a></strong> - Cross-platform mobile development with web technologies</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2>Datasets and Data Sources</h2>
+                            
+                            <h3>Geographic and Transportation Data</h3>
+                            <ul>
+                                <li><strong><a href="https://www.openstreetmap.org/" class="text-decoration-none">OpenStreetMap</a></strong> - Free, editable geographic database of the world</li>
+                                <li><strong><a href="https://www.ordnancesurvey.co.uk/products" class="text-decoration-none">Ordnance Survey Open Data</a></strong> - UK national mapping agency datasets</li>
+                                <li><strong><a href="https://gtfs.org/" class="text-decoration-none">GTFS (General Transit Feed Specification)</a></strong> - Public transportation schedules and geographic information</li>
+                                <li><strong><a href="https://naturalengland-defra.opendata.arcgis.com/" class="text-decoration-none">Natural England</a></strong> - Environmental and recreational datasets for England</li>
+                            </ul>
+
+                            <h3>Walking and Activity Data</h3>
+                            <ul>
+                                <li><strong><a href="https://www.gov.uk/government/collections/walking-and-cycling-statistics" class="text-decoration-none">UK Walking and Cycling Statistics</a></strong> - Government data on active travel</li>
+                                <li><strong><a href="https://nhts.ornl.gov/" class="text-decoration-none">National Household Travel Survey (US)</a></strong> - Comprehensive travel behavior data</li>
+                                <li><strong><a href="https://www.strava.com/heatmap" class="text-decoration-none">Strava Global Heatmap</a></strong> - Aggregated activity data from Strava users</li>
+                            </ul>
+
+                            <h3>Environmental and Context Data</h3>
+                            <ul>
+                                <li><strong><a href="https://openweathermap.org/api" class="text-decoration-none">OpenWeatherMap</a></strong> - Weather data and forecasting API</li>
+                                <li><strong><a href="https://uk-air.defra.gov.uk/data" class="text-decoration-none">UK Air Information Resource</a></strong> - Air quality monitoring data</li>
+                                <li><strong><a href="https://data.police.uk/" class="text-decoration-none">Police.uk</a></strong> - UK crime and policing data</li>
+                                <li><strong><a href="https://www.noise-planet.org/" class="text-decoration-none">NoiseCapture</a></strong> - Collaborative noise mapping platform</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2>APIs and Web Services</h2>
+                            
+                            <h3>Mapping and Geocoding Services</h3>
+                            <ul>
+                                <li><strong><a href="https://www.mapbox.com/" class="text-decoration-none">Mapbox</a></strong> - Maps, geocoding, and navigation APIs</li>
+                                <li><strong><a href="https://developers.google.com/maps" class="text-decoration-none">Google Maps Platform</a></strong> - Comprehensive location services</li>
+                                <li><strong><a href="https://nominatim.org/" class="text-decoration-none">Nominatim</a></strong> - OpenStreetMap-based geocoding service</li>
+                                <li><strong><a href="https://www.here.com/platform" class="text-decoration-none">HERE Location Services</a></strong> - Location platform with mapping APIs</li>
+                            </ul>
+
+                            <h3>Transportation and Mobility APIs</h3>
+                            <ul>
+                                <li><strong><a href="https://tfl.gov.uk/info-for/open-data-users/" class="text-decoration-none">Transport for London API</a></strong> - London public transport data</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4><i class="bi bi-journal-code text-primary"></i> Research Publications</h4>
+                            <ul class="small">
+                                <li><a href="https://journals.sagepub.com/home/epb" class="text-decoration-none">Environment and Planning B</a> - Urban analytics and city science</li>
+                                <li><a href="https://www.sciencedirect.com/journal/computers-environment-and-urban-systems" class="text-decoration-none">Computers, Environment and Urban Systems</a></li>
+                                <li><a href="https://link.springer.com/journal/10109" class="text-decoration-none">Journal of Location Based Services</a></li>
+                                <li><a href="https://www.tandfonline.com/toc/tgis20/current" class="text-decoration-none">International Journal of GIS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4><i class="bi bi-people-fill text-success"></i> Communities and Forums</h4>
+                            <ul class="small">
+                                <li><a href="https://gis.stackexchange.com/" class="text-decoration-none">GIS Stack Exchange</a> - Q&A for GIS professionals</li>
+                                <li><a href="https://www.osgeo.org/" class="text-decoration-none">OSGeo</a> - Open Source Geospatial Foundation</li>
+                                <li><a href="https://wiki.openstreetmap.org/" class="text-decoration-none">OpenStreetMap Wiki</a> - Community documentation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4><i class="bi bi-calendar-event text-info"></i> Conferences and Events</h4>
+                            <ul class="small">
+                                <li><a href="https://www.foss4g.org/" class="text-decoration-none">FOSS4G</a> - Free and Open Source Software for Geospatial</li>
+                                <li><a href="https://chi2025.acm.org/" class="text-decoration-none">CHI Conference</a> - Human-Computer Interaction</li>
+                                <li><a href="https://www.esri.com/en-us/about/events/uc/overview" class="text-decoration-none">Esri UC</a> - GIS user conference</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4><i class="bi bi-mortarboard text-warning"></i> Online Courses</h4>
+                            <ul class="small">
+                                <li><a href="https://www.coursera.org/specializations/gis" class="text-decoration-none">GIS Specialization (Coursera)</a></li>
+                                <li><a href="https://spatialthoughts.com/" class="text-decoration-none">Spatial Thoughts</a> - GIS tutorials and courses</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h4><i class="bi bi-link text-info"></i> Useful Links</h4>
+                            <div class="d-grid gap-2">
+                                <a href="https://github.com/jwilliamsresearch/LWSWG" class="btn btn-outline-primary btn-sm">LWSWG GitHub Repository</a>
+                                <a href="mailto:James.Williams@Nottingham.ac.uk" class="btn btn-outline-success btn-sm">Suggest a Resource</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark p-4">
+        <div class="container text-center text-white">
+            <div class="row">
+                <div class="col-md-3 align-self-center">
+                    <a href="https://nottingham.ac.uk/">
+                        <img class="img-fluid p-2" src="images/funding-logos/Nottingham.png">
+                    </a>
+                </div>
+                <div class="col-md-3 align-self-center">
+                    <a href="https://cdt.horizon.ac.uk/">
+                        <img class="img-fluid p-2" src="images/funding-logos/horizon.webp">
+                    </a>
+                </div>
+                <div class="col-md-3 align-self-center">
+                </div>
+                <div class="col-md-3 align-self-center">
+                    <a href="https://www.ukri.org/councils/epsrc/">
+                        <img class="img-fluid p-2" src="images/funding-logos/ukri.webp">
+                    </a>
+                </div>
+            </div>
+            <p class="mt-4">This activity was supported by the Horizon CDT Impact Grant, made possible through funding
+                from the Engineering and Physical Sciences Research Council (EPSRC) [grant number EP/S023305/1].</p>
+            <hr>
+            <p>Website and initial organisation by <a class="text-white" href="https://jwilliams.science/">James
+                    Williams</a> | <a class="text-white" href="../imports/sources.md">Attribution</a></p>
+        </div>
+    </footer>
+    <script src="imports/Bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

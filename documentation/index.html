@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Documentation | LWSWG - Technical Guidance for Walking Systems</title>
+    <meta name="description" content="Comprehensive technical documentation for walking systems research and development, covering recommendation systems, data integration, place representation, and more.">
+    <meta name="keywords" content="walking systems documentation, technical guidance, place representation, geospatial integration, recommendation systems">
+    <link rel="canonical" href="https://lwswg.jwilliams.science/documentation/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lwswg.jwilliams.science/documentation/">
+    <meta property="og:title" content="Documentation | LWSWG - Technical Guidance for Walking Systems">
+    <meta property="og:description" content="Comprehensive technical documentation for walking systems research and development.">
+    <meta property="og:image" content="https://lwswg.jwilliams.science/images/lwswg-logo.png">
+
+    <link rel="icon" type="image/png" href="../images/favicon-48x48.png" sizes="48x48" />
+    <link href="../imports/Bootswatch/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../images/lwswg-logo.png" alt="LWSWG (Leisure Walking Systems Working Group) Logo"
+                        height="52">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="main-nav">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="../index.html">Home</a>
+                        <a class="nav-link" href="../about.html">About</a>
+                        <a class="nav-link" href="../meetings.html">Meetings</a>
+                        <a class="nav-link" href="../resources.html">Resources</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" aria-current="page" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Research Hub
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item active" aria-current="page" href="index.html">Documentation Home</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="recommendation-systems.html">Recommendation Systems</a></li>
+                                <li><a class="dropdown-item" href="geospatial-integration.html">Geospatial Data Integration</a></li>
+                                <li><a class="dropdown-item" href="place-representation.html">Place Representation</a></li>
+                                <li><a class="dropdown-item" href="data-sharing.html">Data Sharing Standards</a></li>
+                                <li><a class="dropdown-item" href="route-algorithms.html">Walking Route Algorithms</a></li>
+                                <li><a class="dropdown-item" href="user-experience.html">User Experience Design</a></li>
+                                <li><a class="dropdown-item" href="technical-architecture.html">Technical Architecture</a></li>
+                                <li><a class="dropdown-item" href="research-methodology.html">Research Methodology</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="checklist.html">Implementation Checklist</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Impact Outputs
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><h6 class="dropdown-header">Month 1</h6></li>
+                                <li><a class="dropdown-item" href="../impact/benefits.html">Benefits and Market Differentiators</a></li>
+                                <li><a class="dropdown-item" href="../impact/digital.html">Digital Presence</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><h6 class="dropdown-header">Month 2</h6></li>
+                                <li><a class="dropdown-item" href="../impact/demonstrator.html">Demonstrator System</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><h6 class="dropdown-header">Month 3</h6></li>
+                                <li><a class="dropdown-item" href="../impact/technical-report.html">Initial Technical Report</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="main-header" class="">
+            <div class="container">
+                <div class="card p-4 bg-dark-transparent text-white">
+                    <div class="row">
+                        <div class="col-md-4 align-self-center">
+                            <img id="main-logo" class="img-fluid mx-auto d-block my-2" src="../images/lwswg-logo.png"
+                                alt="Leisure Walking Systems Working Group">
+                        </div>
+                        <div class="col-md-8 align-self-center">
+                            <h1>Technical Documentation</h1>
+                            <p class="lead mb-0">Comprehensive guidance for walking systems research and development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2>About This Documentation</h2>
+                    <p>This comprehensive documentation resource represents the primary technical output of the Leisure Walking Systems Working Group impact project. Developed through academic-industry collaboration, it provides practical guidance for researchers and practitioners working in the field of pedestrian navigation and place-based systems.</p>
+                    
+                    <p>Each section addresses core challenges in walking system development, offering both theoretical foundations and practical implementation strategies. The documentation emphasises the integration of multiple approaches and the importance of place representation in creating meaningful walking experiences.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Core Topics</h2>
+                    
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h4><i class="bi bi-cpu text-primary"></i> <a href="recommendation-systems.html" class="text-decoration-none">Recommendation Systems</a></h4>
+                            <p class="mb-0">Algorithmic approaches to walking route and destination recommendations, including collaborative filtering, content-based methods, and hybrid approaches tailored for pedestrian contexts.</p>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h4><i class="bi bi-globe text-success"></i> <a href="geospatial-integration.html" class="text-decoration-none">Geospatial Data Integration</a></h4>
+                            <p class="mb-0">Methods for harmonising diverse spatial datasets, addressing coordinate systems, schema variations, and quality differences across organisational boundaries.</p>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h4><i class="bi bi-map text-warning"></i> <a href="place-representation.html" class="text-decoration-none">Place Representation</a></h4>
+                            <p class="mb-0">Understanding platial information and frameworks for representing the experiential, cultural, and social dimensions of place in walking systems.</p>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h4><i class="bi bi-share text-info"></i> <a href="data-sharing.html" class="text-decoration-none">Data Sharing Standards</a></h4>
+                            <p class="mb-0">Protocols and best practices for interoperable data exchange, including FAIR principles, governance frameworks, and technical standards.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <h2>Implementation Guidance</h2>
+                    
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h4><i class="bi bi-diagram-3 text-primary"></i> <a href="route-algorithms.html" class="text-decoration-none">Route Algorithms</a></h4>
+                            <p class="mb-0">Computational approaches to walking route planning, including pathfinding algorithms, multi-criteria optimisation, and pedestrian-specific considerations.</p>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h4><i class="bi bi-person-check text-success"></i> <a href="user-experience.html" class="text-decoration-none">User Experience Design</a></h4>
+                            <p class="mb-0">Design principles for walking applications, covering mobile interfaces, accessibility considerations, and safety-first interaction design.</p>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h4><i class="bi bi-server text-warning"></i> <a href="technical-architecture.html" class="text-decoration-none">Technical Architecture</a></h4>
+                            <p class="mb-0">System design patterns for scalable walking applications, including microservices, databases, APIs, and integration strategies.</p>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h4><i class="bi bi-graph-up text-info"></i> <a href="research-methodology.html" class="text-decoration-none">Research Methodology</a></h4>
+                            <p class="mb-0">Rigorous approaches to studying walking systems and pedestrian behaviour, including experimental design and ethical considerations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h2>Using This Documentation</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4><i class="bi bi-mortarboard text-success"></i> For Researchers</h4>
+                            <p>Academic researchers can use this documentation to understand current challenges and opportunities in walking systems research, with comprehensive coverage of methodology and technical approaches.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4><i class="bi bi-building text-primary"></i> For Industry</h4>
+                            <p>Industry practitioners will find practical implementation guidance, technical specifications, and best practices that can be directly applied to walking system development projects.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4><i class="bi bi-people text-warning"></i> For Communities</h4>
+                            <p>Community groups and organisations can use this resource to better understand walking system capabilities and contribute to discussions about place representation and data sharing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark p-4">
+        <div class="container text-center text-white">
+            <div class="row">
+                <div class="col-md-3 align-self-center">
+                    <a href="https://nottingham.ac.uk/">
+                        <img class="img-fluid p-2" src="../images/funding-logos/Nottingham.png">
+                    </a>
+                </div>
+                <div class="col-md-3 align-self-center">
+                    <a href="https://cdt.horizon.ac.uk/">
+                        <img class="img-fluid p-2" src="../images/funding-logos/horizon.webp">
+                    </a>
+                </div>
+                <div class="col-md-3 align-self-center">
+                </div>
+                <div class="col-md-3 align-self-center">
+                    <a href="https://www.ukri.org/councils/epsrc/">
+                        <img class="img-fluid p-2" src="../images/funding-logos/ukri.webp">
+                    </a>
+                </div>
+            </div>
+            <p class="mt-4">This activity was supported by the Horizon CDT Impact Grant, made possible through funding
+                from the Engineering and Physical Sciences Research Council (EPSRC) [grant number EP/S023305/1].</p>
+            <hr>
+            <p>Website and initial organisation by <a class="text-white" href="https://jwilliams.science/">James
+                    Williams</a> | <a class="text-white" href="../imports/sources.md">Attribution</a></p>
+        </div>
+    </footer>
+    <script src="../imports/Bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

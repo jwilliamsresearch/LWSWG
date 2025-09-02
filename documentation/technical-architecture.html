@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Technical Architecture for Walking Systems | Documentation | LWSWG</title>
+    <meta name="description" content="Technical architecture patterns and best practices for walking systems, including microservices, APIs, databases, and scalable infrastructure design.">
+    <meta name="keywords" content="technical architecture, walking systems, microservices, APIs, databases, scalability, cloud architecture, system design">
+    <link rel="canonical" href="https://lwswg.jwilliams.science/documentation/technical-architecture.html">
+
+    <link rel="icon" type="image/png" href="../images/favicon-48x48.png" sizes="48x48" />
+    <link href="../imports/Bootswatch/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../images/lwswg-logo.png" alt="LWSWG (Leisure Walking Systems Working Group) Logo"
+                        height="52">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="main-nav">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="../index.html">Home</a>
+                        <a class="nav-link" href="../about.html">About</a>
+                        <a class="nav-link" href="../meetings.html">Meetings</a>
+                        <a class="nav-link" href="../resources.html">Resources</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" aria-current="page" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Research Hub
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="documentation/">Documentation Home</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="recommendation-systems.html">Recommendation Systems</a></li>
+                                <li><a class="dropdown-item" href="geospatial-integration.html">Geospatial Data Integration</a></li>
+                                <li><a class="dropdown-item" href="place-representation.html">Place Representation</a></li>
+                                <li><a class="dropdown-item" href="data-sharing.html">Data Sharing Standards</a></li>
+                                <li><a class="dropdown-item" href="route-algorithms.html">Walking Route Algorithms</a></li>
+                                <li><a class="dropdown-item" href="user-experience.html">User Experience Design</a></li>
+                                <li><a class="dropdown-item active" aria-current="page" href="technical-architecture.html">Technical Architecture</a></li>
+                                <li><a class="dropdown-item" href="research-methodology.html">Research Methodology</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="checklist.html">Implementation Checklist</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Impact Outputs
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><h6 class="dropdown-header">Month 1</h6></li>
+                                <li><a class="dropdown-item" href="../impact/benefits.html">Benefits and Market Differentiators</a></li>
+                                <li><a class="dropdown-item" href="../impact/digital.html">Digital Presence</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><h6 class="dropdown-header">Month 2</h6></li>
+                                <li><a class="dropdown-item" href="../impact/demonstrator.html">Demonstrator System</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><h6 class="dropdown-header">Month 3</h6></li>
+                                <li><a class="dropdown-item" href="../impact/technical-report.html">Initial Technical Report</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="main-header" class="">
+            <div class="container">
+                <div class="card p-4 bg-dark-transparent text-white">
+                    <div class="row">
+                        <div class="col-md-4 align-self-center">
+                            <img id="main-logo" class="img-fluid mx-auto d-block my-2" src="../images/lwswg-logo.png"
+                                alt="Leisure Walking Systems Working Group">
+                        </div>
+                        <div class="col-md-8 align-self-center">
+                            <h1>Technical Architecture for Walking Systems</h1>
+                            <p class="lead mb-0">Scalable and maintainable system designs for walking applications</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2>Introduction to Walking System Architecture</h2>
+                            <p>Walking system architecture requires balancing real-time performance demands, geospatial data complexity, user experience requirements, and scalability needs. These systems must handle location-based queries, route calculations, user preferences, and integration with multiple external data sources.</p>
+                            
+                            <p>Effective architecture enables rapid development, easy maintenance, reliable performance, and seamless integration with the broader ecosystem of mobility and location-based services.</p>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2>System Architecture Patterns</h2>
+                            
+                            <h3>Microservices Architecture</h3>
+                            <p>A microservices architecture involves decomposing the walking system into a collection of focused, independently deployable services. This architectural style promotes modularity and scalability. For instance, a dedicated route calculation service can handle pathfinding and optimisation algorithms, while a separate user preference service manages profile management and personalisation logic. Core geospatial data management and queries are handled by a location data service, and a recommendation service can be dedicated to machine learning algorithms. Finally, a notification service can manage real-time alerts and user communication, allowing each component to be developed, deployed, and scaled independently.</p>
+
+                            <h3>Event-Driven Architecture</h3>
+                            <p>An event-driven architecture uses events to coordinate actions between different system components, creating a loosely coupled and highly responsive system. In this model, events such as user location updates are published to a message bus, allowing any interested service to react accordingly. Route completion events can trigger analytics pipelines and updates to the recommendation engine. Similarly, data change notifications can propagate map or point-of-interest updates across the system efficiently. User activity events, such as saving a favourite route, can also be used to enable real-time personalisation and system feedback.</p>
+
+                            <h3>Layered Architecture</h3>
+                            <p>A layered architecture organises system components into distinct logical layers, promoting a clear separation of concerns. The presentation layer comprises the user-facing elements, such as mobile applications, web interfaces, and API gateways. The application layer contains the core business logic and orchestrates workflows between different services. The domain layer encapsulates the core walking system concepts, rules, and data structures. Finally, the infrastructure layer is responsible for all technical concerns, including databases, integrations with external services, and caching mechanisms.</p>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2>Data Architecture and Management</h2>
+                            
+                            <h3>Geospatial Database Design</h3>
+                            <p>The design of the geospatial database requires specialised approaches to ensure efficient storage and querying of spatial data. The use of spatial indexing, with structures like R-trees or quadtrees, is fundamental for achieving rapid query performance. Effective coordinate system management is also crucial for handling multiple map projections and performing accurate transformations between them. Maintaining correct topology ensures that spatial relationships, such as connectivity and adjacency in the pedestrian network, remain consistent. Furthermore, a multi-scale representation strategy is often necessary to serve different levels of detail for various map zoom levels, optimising performance for both overview and detailed views.</p>
+
+                            <h3>Caching Strategies</h3>
+                            <p>Intelligent caching strategies are essential for optimising the performance and responsiveness of a walking system. Route caching, which involves storing the results of frequently requested route calculations, can dramatically reduce server load and response times. Spatial data caching, often implemented using a tile-based system, is vital for delivering map data efficiently to clients. User preference caching, potentially at the edge of the network, can accelerate the delivery of personalised content. The integration of a Content Delivery Network (CDN) is also key for the global distribution of static geospatial assets, ensuring fast load times for users regardless of their location.</p>
+
+                            <h3>Data Pipeline Architecture</h3>
+                            <p>A robust data pipeline architecture is required to process large streams of location and user activity data. This typically involves both real-time and batch processing capabilities. Real-time stream processing is used for handling live location updates and triggering immediate actions within the system. Batch processing, through Extract, Transform, Load (ETL) pipelines, is better suited for large-scale data integration tasks, such as incorporating new map data. Dedicated machine learning pipelines are also necessary to manage both the training of models on historical data and the deployment of these models for real-time inference. Throughout all these processes, automated data quality monitoring is essential for validating, cleansing, and ensuring the integrity of the data.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4><i class="bi bi-diagram-3-fill text-primary"></i> Architecture Patterns</h4>
+                            <ul class="list-unstyled small">
+                                <li class="mb-2"><strong>Microservices:</strong> Independent, scalable services</li>
+                                <li class="mb-2"><strong>Event-driven:</strong> Loose coupling via events</li>
+                                <li class="mb-2"><strong>Layered:</strong> Separation of concerns</li>
+                                <li class="mb-2"><strong>CQRS:</strong> Command Query Responsibility Segregation</li>
+                                <li class="mb-2"><strong>Hexagonal:</strong> Ports and adapters pattern</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4><i class="bi bi-server text-success"></i> Technology Stack</h4>
+                            <ul class="small">
+                                <li><strong>Databases:</strong> PostGIS, MongoDB, Redis</li>
+                                <li><strong>Message queues:</strong> Apache Kafka, RabbitMQ</li>
+                                <li><strong>API frameworks:</strong> Express.js, Flask, Spring Boot</li>
+                                <li><strong>Containerization:</strong> Docker, Kubernetes</li>
+                                <li><strong>Cloud platforms:</strong> AWS, GCP, Azure</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4><i class="bi bi-speedometer2 text-warning"></i> Performance Considerations</h4>
+                            <ul class="small">
+                                <li>Sub-second route calculation response times</li>
+                                <li>High availability (99.9%+ uptime)</li>
+                                <li>Horizontal scalability for user growth</li>
+                                <li>Efficient spatial query performance</li>
+                                <li>Mobile-optimized data transfer</li>
+                                <li>Offline capability support</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4><i class="bi bi-shield-check text-info"></i> Security & Privacy</h4>
+                            <ul class="small">
+                                <li><strong>Authentication:</strong> OAuth 2.0, JWT tokens</li>
+                                <li><strong>Authorization:</strong> Role-based access control</li>
+                                <li><strong>Data encryption:</strong> TLS in transit, encryption at rest</li>
+                                <li><strong>Privacy protection:</strong> Data anonymization, GDPR compliance</li>
+                                <li><strong>API security:</strong> Rate limiting, input validation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h4><i class="bi bi-book text-info"></i> Related Topics</h4>
+                            <div class="d-grid gap-2">
+                                <a href="geospatial-integration.html" class="btn btn-outline-primary btn-sm">Data Integration</a>
+                                <a href="route-algorithms.html" class="btn btn-outline-primary btn-sm">Route Algorithms</a>
+                                <a href="data-sharing.html" class="btn btn-outline-primary btn-sm">Data Sharing Standards</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark p-4">
+        <div class="container text-center text-white">
+            <div class="row">
+                <div class="col-md-3 align-self-center">
+                    <a href="https://nottingham.ac.uk/">
+                        <img class="img-fluid p-2" src="../images/funding-logos/Nottingham.png">
+                    </a>
+                </div>
+                <div class="col-md-3 align-self-center">
+                    <a href="https://cdt.horizon.ac.uk/">
+                        <img class="img-fluid p-2" src="../images/funding-logos/horizon.webp">
+                    </a>
+                </div>
+                <div class="col-md-3 align-self-center">
+                </div>
+                <div class="col-md-3 align-self-center">
+                    <a href="https://www.ukri.org/councils/epsrc/">
+                        <img class="img-fluid p-2" src="../images/funding-logos/ukri.webp">
+                    </a>
+                </div>
+            </div>
+            <p class="mt-4">This activity was supported by the Horizon CDT Impact Grant, made possible through funding
+                from the Engineering and Physical Sciences Research Council (EPSRC) [grant number EP/S023305/1].</p>
+            <hr>
+            <p>Website and initial organisation by <a class="text-white" href="https://jwilliams.science/">James
+                    Williams</a> | <a class="text-white" href="../imports/sources.md">Attribution</a></p>
+        </div>
+    </footer>
+    <script src="../imports/Bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>App Types Comparison | LWSWG</title>
+    <link rel="icon" type="image/png" href="../../images/favicon-48x48.png" sizes="48x48" />
+    <link href="../../imports/Bootswatch/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/custom.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="../../index.html">
+                    <img src="../../images/lwswg-logo.png" alt="LWSWG (Leisure Walking Systems Working Group) Logo"
+                        height="52">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="main-nav">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="../../index.html">Home</a>
+                        <a class="nav-link" href="../../about.html">About</a>
+                        <a class="nav-link" href="../../meetings.html">Meetings</a>
+                        <li class="nav-item dropdown d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle active" href="#" id="researchHubDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Research Hub
+                            </a>
+                            <div class="dropdown-menu mega-menu-dropdown" aria-labelledby="researchHubDropdown">
+                                <div class="mega-menu-row">
+                                    <div class="mega-menu-col-visual-dropdown">
+                                        <a href="../" class="research-hub-link">
+                                            <h2>Research Hub</h2>
+                                            <p>
+                                                Explore foundational goals, structure, concepts, project history, and navigation tips.
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header leisure-walking">
+                                            Leisure Walking Systems
+                                        </h4>
+                                        <ul>
+                                            <li><a href="../leisure-walking-systems/recommendation-systems.html">Recommendation Systems</a></li>
+                                            <li><a href="../leisure-walking-systems/geospatial-integration.html">Geospatial Integration</a></li>
+                                            <li><a href="../leisure-walking-systems/route-algorithms.html">Route Algorithms</a></li>
+                                            <li><a href="../design/user-experience.html">User Personas</a></li>
+                                            <li><a href="../leisure-walking-systems/contextual-factors.html">Contextual Factors</a></li>
+                                            <li><a href="../leisure-walking-systems/walkability-metrics.html">Walkability Metrics</a></li>
+                                            <li><a href="../leisure-walking-systems/app-types-comparison.html">App Types Comparison</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header place-walking">
+                                            Place & Walking
+                                        </h4>
+                                        <ul>
+                                            <li><a href="../place-and-walking/place-representation.html">Place Representation</a></li>
+                                            <li><a href="../place-and-walking/platial-gis.html">Platial GIS</a></li>
+                                            <li><a href="../place-and-walking/technical-architecture.html">Platial Architecture</a></li>
+                                            <li><a href="../place-and-walking/designing-for-place.html">Designing for Place</a></li>
+                                            <li><a href="../place-and-walking/case-studies-by-region.html">Case Studies by Region</a></li>
+                                            <li><a href="../place-and-walking/mapping-place-qualities.html">Mapping Place Qualities</a></li>
+                                            <li><a href="../place-and-walking/platial-vs-spatial.html">Platial vs Spatial</a></li>
+                                            <li><a href="../place-and-walking/cultural-dimensions.html">Cultural Dimensions</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header methods-evaluation">
+                                            Methods & Evaluation
+                                        </h4>
+                                        <ul>
+                                            <li><a href="../methods-and-evaluation/research-methodology.html">Think-Aloud Guide</a></li>
+                                            <li><a href="../methods-and-evaluation/checklist.html">Planning Checklist</a></li>
+                                            <li><a href="../methods-and-evaluation/evaluation-framework.html">Evaluation Framework</a></li>
+                                            <li><a href="../methods-and-evaluation/subjective-vs-objective.html">Subjective vs Objective</a></li>
+                                            <li><a href="../methods-and-evaluation/capturing-place-qualities.html">Capturing Place Qualities</a></li>
+                                            <li><a href="../methods-and-evaluation/ethical-considerations.html">Ethical Considerations</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header design">
+                                            Design
+                                        </h4>
+                                        <ul>
+                                            <li><a href="../design/slowness-and-serendipity.html">Slowness & Serendipity</a></li>
+                                            <li><a href="../design/user-experience.html">UX Patterns</a></li>
+                                            <li><a href="../design/route-interfaces.html">Route Interfaces</a></li>
+                                            <li><a href="../design/use-case-comparison.html">Use Case Comparison</a></li>
+                                            <li><a href="../design/accessibility.html">Accessibility</a></li>
+                                            <li><a href="../design/visual-cues.html">Visual Cues</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link active" href="../">Research Hub</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="impactOutputsDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Impact Outputs
+                            </a>
+                            <div class="dropdown-menu mega-menu-dropdown" aria-labelledby="impactOutputsDropdown">
+                                <div class="mega-menu-row">
+                                    <div class="mega-menu-col-visual-dropdown">
+                                        <a href="../../impact/" class="research-hub-link">
+                                            <h2>Impact Outputs</h2>
+                                            <p style="text-align: center;">
+                                                Explore project deliverables, technical reports, and demonstrator systems.
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header outputs">
+                                            Outputs
+                                        </h4>
+                                        <ul>
+                                            <li><a href="../../impact/benefits.html">Benefits & Differentiators</a></li>
+                                            <li><a href="../../impact/digital.html">Digital Presence</a></li>
+                                            <li><a href="../../impact/demonstrator.html">Demonstrator System</a></li>
+                                            <li><a href="../../impact/technical-report.html">Initial Technical Report</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header resources">
+                                            Resources
+                                        </h4>
+                                        <ul>
+                                            <li><a href="../resources/data-sharing.html">Datasets & Standards</a></li>
+                                            <li><a href="../resources/templates-and-scripts.html">Templates & Scripts</a></li>
+                                            <li><a href="../methods-and-evaluation/checklist.html">Implementation Guides</a></li>
+                                            <li><a href="../resources/glossary.html">Glossary</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="main-header" class="">
+            <div class="container">
+                <div class="card p-4 bg-dark-transparent text-white">
+                    <div class="row">
+                        <div class="col-md-4 align-self-center">
+                            <img id="main-logo" class="img-fluid mx-auto d-block my-2" src="../../images/lwswg-logo.png"
+                                alt="Leisure Walking Systems Working Group">
+                        </div>
+                        <div class="col-md-8 align-self-center">
+                            <h1>Application Types</h1>
+                            <p class="lead mb-0">Comparing key categories of walking-related applications and their distinct roles in supporting walking practices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </header>
+        <main class="container py-5">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2>Introduction to Application Types</h2>
+                            <p>Digital technologies supporting walking take many forms, each with distinct purposes, methods, and user experiences. These applications range from systems that recommend personalised routes, to tools that track health outcomes, to platforms that encourage community engagement around walking.</p>
+                            
+                            <p>Comparing application types highlights their different strengths and limitations, while also revealing opportunities for integration. Increasingly, modern walking systems combine elements from multiple categories to provide more holistic and user-centred experiences.</p>
+                        </div>
+                    </div>
+        
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2>Core Application Types</h2>
+                            
+                            <h3>Recommendation Systems</h3>
+                            <p>Recommendation systems suggest walking routes based on user preferences and contextual factors. These systems may optimise for scenic value, safety, or accessibility, and often leverage open geospatial data combined with algorithms. Example: <em>Komoot</em>, which recommends routes tailored to leisure activities and difficulty levels.</p>
+        
+                            <h3>Activity Trackers</h3>
+                            <p>Activity trackers log user activity for health, fitness, or behavioural insights. They typically monitor steps, distance, speed, and calories burned, with visual feedback and progress metrics. Example: <em>Fitbit</em>, which integrates walking into broader health monitoring frameworks.</p>
+        
+                            <h3>Route Planners</h3>
+                            <p>Route planners focus on generating optimal walking routes between two points. They often prioritise efficiency and navigational clarity, integrating features such as step-by-step directions, estimated time, and elevation profiles. Example: <em>Google Maps walking directions</em>, which emphasise practicality and navigation support.</p>
+        
+                            <h3>Community Platforms</h3>
+                            <p>Community-based walking platforms emphasise social engagement, knowledge sharing, and collective experience. Users may share routes, post photos, and participate in group challenges. Example: <em>OS Maps</em>, which combines route sharing with user reviews and photographs to guide others.</p>
+                        </div>
+                    </div>
+        
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2>Hybrid and Emerging Applications</h2>
+                            
+                            <h3>Gamified Systems</h3>
+                            <p>Gamified applications incorporate rewards, challenges, and playful elements into walking. These can motivate walking through competition, exploration, or narrative design. Example: <em>Pokémon GO</em>, which combines augmented reality with location-based walking incentives.</p>
+        
+                            <h3>Context-Aware Applications</h3>
+                            <p>Context-aware walking applications integrate real-time environmental data such as weather, air quality, or safety reports to adapt recommendations dynamically. Example: <em>CityMapper</em>, which adapts walking recommendations based on transit availability, disruptions, and user context.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4><i class="bi bi-grid-1x2-fill text-primary"></i> Application Categories</h4>
+                            <ul class="list-unstyled small">
+                                <li class="mb-2"><strong>Recommendation:</strong> Komoot</li>
+                                <li class="mb-2"><strong>Activity Tracking:</strong> Fitbit</li>
+                                <li class="mb-2"><strong>Route Planning:</strong> Google Maps</li>
+                                <li class="mb-2"><strong>Community:</strong> AllTrails</li>
+                                <li class="mb-2"><strong>Gamified:</strong> Pokémon GO</li>
+                                <li class="mb-2"><strong>Context-Aware:</strong> CityMapper</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4><i class="bi bi-lightbulb text-warning"></i> Design Considerations</h4>
+                            <ul class="small">
+                                <li>Balance personalisation with interpretability</li>
+                                <li>Integrate health, social, and environmental dimensions</li>
+                                <li>Ensure usability across demographics and abilities</li>
+                                <li>Protect user privacy and location data</li>
+                                <li>Support interoperability across platforms</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4><i class="bi bi-list-check text-success"></i> Comparison Checklist</h4>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="check1">
+                                <label class="form-check-label" for="check1">
+                                    Identify primary application purpose
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="check2">
+                                <label class="form-check-label" for="check2">
+                                    Map data requirements and sources
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="check3">
+                                <label class="form-check-label" for="check3">
+                                    Evaluate strengths and limitations
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="check4">
+                                <label class="form-check-label" for="check4">
+                                    Consider hybrid opportunities
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="check5">
+                                <label class="form-check-label" for="check5">
+                                    Align with user personas and needs
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="card">
+                        <div class="card-body">
+                            <h4><i class="bi bi-book text-info"></i> Related Topics</h4>
+                            <div class="d-grid gap-2">
+                                <a href="../design/user-experience.html" class="btn btn-outline-primary btn-sm">User Personas</a>
+                                <a href="../design/accessibility.html" class="btn btn-outline-primary btn-sm">Accessibility</a>
+                                <a href="../leisure-walking-systems/recommendation-systems.html" class="btn btn-outline-primary btn-sm">Recommendation Systems</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+    <footer class="bg-dark p-4">
+        <div class="container text-center text-white">
+            <div class="row">
+                <div class="col-md-3 align-self-center">
+                    <a href="https://nottingham.ac.uk/">
+                        <img class="img-fluid p-2" src="../../images/funding-logos/Nottingham.png">
+                    </a>
+                </div>
+                <div class="col-md-3 align-self-center">
+                    <a href="https://cdt.horizon.ac.uk/">
+                        <img class="img-fluid p-2" src="../../images/funding-logos/horizon.webp"> 
+                    </a>
+                </div>
+                <div class="col-md-3 align-self-center">
+
+                </div>
+                <div class="col-md-3 align-self-center">
+                    <a href="https://www.ukri.org/councils/epsrc/">
+                        <img class="img-fluid p-2" src="../../images/funding-logos/ukri.webp">
+                    </a>
+                </div>
+            </div>
+            <p class="mt-4">This activity was supported by the Horizon CDT Impact Grant, made possible through funding
+                from the Engineering and Physical Sciences Research Council (EPSRC) [grant number EP/S023305/1]. </p>
+            <hr>
+            <p>Website and initial organisation by <a class="text-white" href="https://jwilliams.science/">James
+                    Williams</a> | <a class="text-white" href="../../imports/sources.md">Attribution</a></p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../../imports/Bootstrap/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../../imports/vanilla-tilt/vanilla-tilt.js"></script>
+</body>
+</html>

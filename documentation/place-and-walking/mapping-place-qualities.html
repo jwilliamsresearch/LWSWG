@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mapping Place Qualities | LWSWG</title>
+    <link rel="icon" type="image/png" href="../../images/favicon-48x48.png" sizes="48x48" />
+    <link href="../../imports/Bootswatch/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/custom.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="../../index.html">
+                    <img src="../../images/lwswg-logo.png" alt="LWSWG (Leisure Walking Systems Working Group) Logo"
+                        height="52">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="main-nav">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="../../index.html">Home</a>
+                        <a class="nav-link" href="../../about.html">About</a>
+                        <a class="nav-link" href="../../meetings.html">Meetings</a>
+                        <li class="nav-item dropdown d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle active" href="#" id="researchHubDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Research Hub
+                            </a>
+                            <div class="dropdown-menu mega-menu-dropdown" aria-labelledby="researchHubDropdown">
+                                <div class="mega-menu-row">
+                                    <div class="mega-menu-col-visual-dropdown">
+                                        <a href="../" class="research-hub-link">
+                                            <h2>Research Hub</h2>
+                                            <p>
+                                                Explore foundational goals, structure, concepts, project history, and navigation tips.
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header leisure-walking">
+                                            Leisure Walking Systems
+                                        </h4>
+                                        <ul>
+                                            <li><a href="../leisure-walking-systems/recommendation-systems.html">Recommendation Systems</a></li>
+                                            <li><a href="../leisure-walking-systems/geospatial-integration.html">Geospatial Integration</a></li>
+                                            <li><a href="../leisure-walking-systems/route-algorithms.html">Route Algorithms</a></li>
+                                            <li><a href="../design/user-experience.html">User Personas</a></li>
+                                            <li><a href="../leisure-walking-systems/contextual-factors.html">Contextual Factors</a></li>
+                                            <li><a href="../leisure-walking-systems/walkability-metrics.html">Walkability Metrics</a></li>
+                                            <li><a href="../leisure-walking-systems/app-types-comparison.html">App Types Comparison</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header place-walking">
+                                            Place & Walking
+                                        </h4>
+                                        <ul>
+                                            <li><a href="../place-and-walking/place-representation.html">Place Representation</a></li>
+                                            <li><a href="../place-and-walking/platial-gis.html">Platial GIS</a></li>
+                                            <li><a href="../place-and-walking/technical-architecture.html">Platial Architecture</a></li>
+                                            <li><a href="../place-and-walking/designing-for-place.html">Designing for Place</a></li>
+                                            <li><a href="../place-and-walking/case-studies-by-region.html">Case Studies by Region</a></li>
+                                            <li><a href="../place-and-walking/mapping-place-qualities.html">Mapping Place Qualities</a></li>
+                                            <li><a href="../place-and-walking/platial-vs-spatial.html">Platial vs Spatial</a></li>
+                                            <li><a href="../place-and-walking/cultural-dimensions.html">Cultural Dimensions</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header methods-evaluation">
+                                            Methods & Evaluation
+                                        </h4>
+                                        <ul>
+                                            <li><a href="../methods-and-evaluation/research-methodology.html">Think-Aloud Guide</a></li>
+                                            <li><a href="../methods-and-evaluation/checklist.html">Planning Checklist</a></li>
+                                            <li><a href="../methods-and-evaluation/evaluation-framework.html">Evaluation Framework</a></li>
+                                            <li><a href="../methods-and-evaluation/subjective-vs-objective.html">Subjective vs Objective</a></li>
+                                            <li><a href="../methods-and-evaluation/capturing-place-qualities.html">Capturing Place Qualities</a></li>
+                                            <li><a href="../methods-and-evaluation/ethical-considerations.html">Ethical Considerations</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header design">
+                                            Design
+                                        </h4>
+                                        <ul>
+                                            <li><a href="../design/slowness-and-serendipity.html">Slowness & Serendipity</a></li>
+                                            <li><a href="../design/user-experience.html">UX Patterns</a></li>
+                                            <li><a href="../design/route-interfaces.html">Route Interfaces</a></li>
+                                            <li><a href="../design/use-case-comparison.html">Use Case Comparison</a></li>
+                                            <li><a href="../design/accessibility.html">Accessibility</a></li>
+                                            <li><a href="../design/visual-cues.html">Visual Cues</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link active" href="../">Research Hub</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="impactOutputsDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Impact Outputs
+                            </a>
+                            <div class="dropdown-menu mega-menu-dropdown" aria-labelledby="impactOutputsDropdown">
+                                <div class="mega-menu-row">
+                                    <div class="mega-menu-col-visual-dropdown">
+                                        <a href="../../impact/" class="research-hub-link">
+                                            <h2>Impact Outputs</h2>
+                                            <p style="text-align: center;">
+                                                Explore project deliverables, technical reports, and demonstrator systems.
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header outputs">
+                                            Outputs
+                                        </h4>
+                                        <ul>
+                                            <li><a href="../../impact/benefits.html">Benefits & Differentiators</a></li>
+                                            <li><a href="../../impact/digital.html">Digital Presence</a></li>
+                                            <li><a href="../../impact/demonstrator.html">Demonstrator System</a></li>
+                                            <li><a href="../../impact/technical-report.html">Initial Technical Report</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header resources">
+                                            Resources
+                                        </h4>
+                                        <ul>
+                                            <li><a href="../resources/data-sharing.html">Datasets & Standards</a></li>
+                                            <li><a href="../resources/templates-and-scripts.html">Templates & Scripts</a></li>
+                                            <li><a href="../methods-and-evaluation/checklist.html">Implementation Guides</a></li>
+                                            <li><a href="../resources/glossary.html">Glossary</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="main-header" class="">
+            <div class="container">
+                <div class="card p-4 bg-dark-transparent text-white">
+                    <div class="row">
+                        <div class="col-md-4 align-self-center">
+                            <img id="main-logo" class="img-fluid mx-auto d-block my-2" src="../../images/lwswg-logo.png"
+                                alt="Leisure Walking Systems Working Group">
+                        </div>
+                        <div class="col-md-8 align-self-center">
+                            <h1>Mapping Place Qualities</h1>
+                            <p class="lead mb-0">Understanding how to capture and represent the qualities of place for walking research and systems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </header>
+        <main class="container py-5">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2>Introduction</h2>
+                            <p>Mapping place qualities involves going beyond the geometry of spatial networks to capture the lived experience of walking environments. While spatial measures such as distance or connectivity remain important, they do not explain why one route feels pleasant, safe, or stressful compared to another. Place qualities seek to describe these experiential dimensions, making them visible and actionable for walking research, planning, and system design.</p>
+                            
+                            <p>The challenge lies in translating subjective experiences into representations that can be compared, modelled, and integrated with geospatial data. This requires drawing on multiple data sources, from open mapping and sensor data to community input and user feedback, in order to construct multi-dimensional portraits of walking environments.</p>
+                        </div>
+                    </div>
+        
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2>Conceptual Framework</h2>
+                            <p>Qualities of place can be grouped into a number of recurring dimensions relevant to walking. Safety encompasses both traffic safety and social security, influenced by factors such as lighting, surveillance, and pedestrian crossings. Well-being relates to environmental comfort, including air quality, noise levels, shade, and opportunities for rest. Effort reflects the physical exertion required, shaped by gradients, surfaces, and crowding. Exploration captures novelty, variety, and opportunities for discovery, while Pleasure relates to aesthetic and emotional responses, often tied to greenery, heritage, and scenic views. Together, these dimensions form a holistic framework that aligns with how walkers themselves describe their experiences.</p>
+                            
+                            <p>Representing qualities requires careful attention to scale. At the street level, qualities may vary dramatically between adjacent blocks or even along a single segment. At the neighbourhood or city level, they reveal broader patterns of accessibility and inequality. Methods such as gridding, network segmentation, or clustering allow for systematic analysis while preserving local variation.</p>
+                        </div>
+                    </div>
+        
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2>Data and Representation</h2>
+                            <p>Mapping place qualities draws on a diverse range of data. OpenStreetMap and local authority datasets can provide details on pavements, crossings, lighting, and amenities. Environmental sensors and remote sensing add indicators of air quality, noise, vegetation, and surface types. Socio-digital traces, such as route reviews or photographs, contribute subjective accounts that enrich objective measures. Most importantly, participatory methods such as surveys, interviews, or think-aloud walks capture lived perspectives, ensuring that the resulting maps reflect actual experience rather than abstract proxies alone.</p>
+                            
+                            <p>These heterogeneous sources are integrated through feature engineering, normalisation, and weighting schemes. Attributes can be combined into thematic indices, such as a safety index or a greenery score, or retained separately to allow multi-criteria evaluation. While composite scores can aid communication, transparency is essential to avoid concealing the complexity and trade-offs inherent in place qualities.</p>
+                        </div>
+                    </div>
+        
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2>Validation and Challenges</h2>
+                            <p>Validating mapped qualities requires comparison with ground-truth data and direct user studies. Field audits, structured walk-alongs, and community workshops provide opportunities to check whether mapped qualities align with lived perceptions. Such processes also reveal the limits of transferability: a measure of safety in one cultural or urban context may not carry the same meaning elsewhere. Reporting uncertainty, data gaps, and temporal limitations is therefore vital.</p>
+                            
+                            <p>At the same time, ethical and governance considerations must guide practice. Place qualities often draw on personal or community data, requiring sensitivity to privacy and representation. Care must also be taken not to reduce complex social experiences to oversimplified metrics, but instead to use mapping as a means of supporting more inclusive, participatory, and context-aware walking environments.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4><i class="bi bi-exclamation-triangle-fill text-warning"></i> Common Pitfalls</h4>
+                            <ul class="list-unstyled small">
+                                <li class="mb-2"><i class="bi bi-x-circle text-danger"></i> Reducing complex experiences to a single number</li>
+                                <li class="mb-2"><i class="bi bi-x-circle text-danger"></i> Ignoring temporal and seasonal variation</li>
+                                <li class="mb-2"><i class="bi bi-x-circle text-danger"></i> Applying weights without transparency</li>
+                                <li class="mb-2"><i class="bi bi-x-circle text-danger"></i> Over-reliance on proxy signals without validation</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4><i class="bi bi-tools text-primary"></i> Approaches</h4>
+                            <ul class="small">
+                                <li>Integration of OSM and municipal datasets</li>
+                                <li>Use of sensors and remote sensing for environmental qualities</li>
+                                <li>Participatory surveys and walk-along studies</li>
+                                <li>Multi-criteria decision analysis for aggregation</li>
+                                <li>Clustering methods to identify quality-based regions</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4><i class="bi bi-list-check text-success"></i> Mapping Checklist</h4>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="check1">
+                                <label class="form-check-label" for="check1">
+                                    Define relevant quality dimensions
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="check2">
+                                <label class="form-check-label" for="check2">
+                                    Select and preprocess data sources
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="check3">
+                                <label class="form-check-label" for="check3">
+                                    Integrate subjective and objective indicators
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="check4">
+                                <label class="form-check-label" for="check4">
+                                    Normalise, weight, and aggregate transparently
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="check5">
+                                <label class="form-check-label" for="check5">
+                                    Validate against user experience
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="card">
+                        <div class="card-body">
+                            <h4><i class="bi bi-book text-info"></i> Related Topics</h4>
+                            <div class="d-grid gap-2">
+                                <a href="../place-and-walking/place-representation.html" class="btn btn-outline-primary btn-sm">Place Representation</a>
+                                <a href="../place-and-walking/platial-vs-spatial.html" class="btn btn-outline-primary btn-sm">Platial vs Spatial</a>
+                                <a href="../place-and-walking/cultural-dimensions.html" class="btn btn-outline-primary btn-sm">Cultural Dimensions</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+    <footer class="bg-dark p-4">
+        <div class="container text-center text-white">
+            <div class="row">
+                <div class="col-md-3 align-self-center">
+                    <a href="https://nottingham.ac.uk/">
+                        <img class="img-fluid p-2" src="../../images/funding-logos/Nottingham.png">
+                    </a>
+                </div>
+                <div class="col-md-3 align-self-center">
+                    <a href="https://cdt.horizon.ac.uk/">
+                        <img class="img-fluid p-2" src="../../images/funding-logos/horizon.webp">
+                    </a>
+                </div>
+                <div class="col-md-3 align-self-center">
+                </div>
+                <div class="col-md-3 align-self-center">
+                    <a href="https://www.ukri.org/councils/epsrc/">
+                        <img class="img-fluid p-2" src="../../images/funding-logos/ukri.webp">
+                    </a>
+                </div>
+            </div>
+            <p class="mt-4">This activity was supported by the Horizon CDT Impact Grant, made possible through funding
+                from the Engineering and Physical Sciences Research Council (EPSRC) [grant number EP/S023305/1].</p>
+            <hr>
+            <p>Website and initial organisation by <a class="text-white" href="https://jwilliams.science/">James
+                    Williams</a> | <a class="text-white" href="../../imports/sources.md">Attribution</a></p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../../imports/Bootstrap/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../../imports/vanilla-tilt/vanilla-tilt.js"></script>
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Place Representation | LWSWG</title>
+    <meta name="description" content="Understanding platial information and place representation frameworks in walking systems, including semantic approaches, ontologies, and spatial cognition principles.">
+    <meta name="keywords" content="place representation, platial information, spatial cognition, ontologies, place-based GIS, qualitative spatial reasoning, walking systems">
+    <link rel="canonical" href="https://lwswg.jwilliams.science/documentation/place-and-walking/place-representation.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lwswg.jwilliams.science/documentation/place-and-walking/place-representation.html">
+    <meta property="og:title" content="Place Representation | LWSWG">
+    <meta property="og:description" content="Understanding platial information and place representation frameworks in walking systems.">
+    <meta property="og:image" content="https://lwswg.jwilliams.science/images/lwswg-logo.png">
+
+    <link rel="icon" type="image/png" href="../../images/favicon-48x48.png" sizes="48x48" />
+    <link href="../../imports/Bootswatch/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/custom.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="../../index.html">
+                    <img src="../../images/lwswg-logo.png" alt="LWSWG (Leisure Walking Systems Working Group) Logo"
+                        height="52">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="main-nav">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="../../index.html">Home</a>
+                        <a class="nav-link" href="../../about.html">About</a>
+                        <a class="nav-link" href="../../meetings.html">Meetings</a>
+                        <li class="nav-item dropdown d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle active" href="#" id="researchHubDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Research Hub
+                            </a>
+                            <div class="dropdown-menu mega-menu-dropdown" aria-labelledby="researchHubDropdown">
+                                <div class="mega-menu-row">
+                                    <div class="mega-menu-col-visual-dropdown">
+                                        <a href="../" class="research-hub-link">
+                                            <h2>Research Hub</h2>
+                                            <p>
+                                                Explore foundational goals, structure, concepts, project history, and navigation tips.
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header leisure-walking">
+                                            Leisure Walking Systems
+                                        </h4>
+                                        <ul>
+                                            <li><a href="../leisure-walking-systems/recommendation-systems.html">Recommendation Systems</a></li>
+                                            <li><a href="../leisure-walking-systems/geospatial-integration.html">Geospatial Integration</a></li>
+                                            <li><a href="../leisure-walking-systems/route-algorithms.html">Route Algorithms</a></li>
+                                            <li><a href="../design/user-experience.html">User Personas</a></li>
+                                            <li><a href="../leisure-walking-systems/contextual-factors.html">Contextual Factors</a></li>
+                                            <li><a href="../leisure-walking-systems/walkability-metrics.html">Walkability Metrics</a></li>
+                                            <li><a href="../leisure-walking-systems/app-types-comparison.html">App Types Comparison</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header place-walking">
+                                            Place & Walking
+                                        </h4>
+                                        <ul>
+                                            <li><a href="./place-representation.html">Place Representation</a></li>
+                                            <li><a href="./platial-gis.html">Platial GIS</a></li>
+                                            <li><a href="./technical-architecture.html">Platial Architecture</a></li>
+                                            <li><a href="./designing-for-place.html">Designing for Place</a></li>
+                                            <li><a href="./case-studies-by-region.html">Case Studies by Region</a></li>
+                                            <li><a href="./mapping-place-qualities.html">Mapping Place Qualities</a></li>
+                                            <li><a href="./platial-vs-spatial.html">Platial vs Spatial</a></li>
+                                            <li><a href="./cultural-dimensions.html">Cultural Dimensions</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header methods-evaluation">
+                                            Methods & Evaluation
+                                        </h4>
+                                        <ul>
+                                            <li><a href="../methods-and-evaluation/research-methodology.html">Think-Aloud Guide</a></li>
+                                            <li><a href="../methods-and-evaluation/checklist.html">Planning Checklist</a></li>
+                                            <li><a href="../methods-and-evaluation/evaluation-framework.html">Evaluation Framework</a></li>
+                                            <li><a href="../methods-and-evaluation/subjective-vs-objective.html">Subjective vs Objective</a></li>
+                                            <li><a href="../methods-and-evaluation/capturing-place-qualities.html">Capturing Place Qualities</a></li>
+                                            <li><a href="../methods-and-evaluation/ethical-considerations.html">Ethical Considerations</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header design">
+                                            Design
+                                        </h4>
+                                        <ul>
+                                            <li><a href="../design/slowness-and-serendipity.html">Slowness & Serendipity</a></li>
+                                            <li><a href="../design/user-experience.html">UX Patterns</a></li>
+                                            <li><a href="../design/route-interfaces.html">Route Interfaces</a></li>
+                                            <li><a href="../design/use-case-comparison.html">Use Case Comparison</a></li>
+                                            <li><a href="../design/accessibility.html">Accessibility</a></li>
+                                            <li><a href="../design/visual-cues.html">Visual Cues</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link active" href="../">Research Hub</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="impactOutputsDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Impact Outputs
+                            </a>
+                            <div class="dropdown-menu mega-menu-dropdown" aria-labelledby="impactOutputsDropdown">
+                                <div class="mega-menu-row">
+                                    <div class="mega-menu-col-visual-dropdown">
+                                        <a href="../../impact/" class="research-hub-link">
+                                            <h2>Impact Outputs</h2>
+                                            <p style="text-align: center;">
+                                                Explore project deliverables, technical reports, and demonstrator systems.
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header outputs">
+                                            Outputs
+                                        </h4>
+                                        <ul>
+                                            <li><a href="../../impact/benefits.html">Benefits & Differentiators</a></li>
+                                            <li><a href="../../impact/digital.html">Digital Presence</a></li>
+                                            <li><a href="../../impact/demonstrator.html">Demonstrator System</a></li>
+                                            <li><a href="../../impact/technical-report.html">Initial Technical Report</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header resources">
+                                            Resources
+                                        </h4>
+                                        <ul>
+                                            <li><a href="../resources/data-sharing.html">Datasets & Standards</a></li>
+                                            <li><a href="../resources/templates-and-scripts.html">Templates & Scripts</a></li>
+                                            <li><a href="../methods-and-evaluation/checklist.html">Implementation Guides</a></li>
+                                            <li><a href="../resources/glossary.html">Glossary</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="main-header" class="">
+            <div class="container">
+                <div class="card p-4 bg-dark-transparent text-white">
+                    <div class="row">
+                        <div class="col-md-4 align-self-center">
+                            <img id="main-logo" class="img-fluid mx-auto d-block my-2" src="../../images/lwswg-logo.png"
+                                alt="Leisure Walking Systems Working Group">
+                        </div>
+                        <div class="col-md-8 align-self-center">
+                            <h1>Place Representation</h1>
+                            <p class="lead mb-0">Understanding how humans conceptualise and interact with places in walking systems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </header>
+        <main class="container py-5">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2>Introduction</h2>
+                            <p>Place representation concerns how places are conceptualised, modelled, and communicated within walking systems. Unlike abstract coordinates or geometric shapes, places carry meanings, histories, and functions that shape how walkers perceive and use them. Understanding these representations is essential for creating systems that go beyond navigation to reflect the richness of human experience in space.</p>
+                            
+                            <p>Different representations emphasise different aspects: a map might show a park as a polygon, while a walker may experience it as a safe, green refuge, or a social gathering point. Bridging these perspectives is central to developing walking systems that are both technically robust and experientially relevant.</p>
+                        </div>
+                    </div>
+        
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2>Conceptualising Place</h2>
+                            <p>Places can be conceptualised in multiple ways. Ontological models define places as bounded entities with attributes such as name, type, and geometry. Cognitive models focus on how individuals mentally construct places through landmarks, paths, and regions. Social models emphasise the meanings, practices, and interactions that imbue places with identity. Each of these perspectives contributes to how walking environments are represented and understood in digital systems.</p>
+                            
+                            <p>For walking systems, this means recognising that a route is not only a sequence of coordinates but also a progression through meaningful places. The same path may be understood as a commute, a leisure stroll, or a cultural journey depending on the walker’s perspective and purpose.</p>
+                        </div>
+                    </div>
+        
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2>Representational Approaches</h2>
+                            <p>Geographic information systems often represent places as polygons, points, or network nodes. While effective for computation, these forms risk stripping places of meaning. Alternative approaches seek to capture more: textual representations (place descriptions, narratives), participatory mapping (community input and perceptions), and hybrid models that link spatial geometry with platial qualities such as safety, beauty, or cultural value.</p>
+                            
+                            <p>Emerging techniques also explore linking heterogeneous datasets, from open mapping sources and remote sensing to user-generated reviews and photos, in order to create richer, multi-dimensional representations of place. These allow walking systems to adapt routes not only to spatial efficiency but also to experiential preferences.</p>
+                        </div>
+                    </div>
+        
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2>Implications for Walking Systems</h2>
+                            <p>How places are represented directly affects the design and outputs of walking systems. A purely spatial representation may produce efficient but uninspiring routes, whereas a platial representation can highlight scenic, safe, or socially meaningful paths. Representations also influence accessibility: systems that capture place qualities such as step-free access or lighting conditions better serve diverse users with different mobility needs.</p>
+                            
+                            <p>Ultimately, place representation shapes how systems mediate between walkers and their environments. By incorporating multiple perspectives, walking systems can become not only tools for navigation but also mediators of experience, enabling users to discover, interpret, and engage with places in new ways.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4><i class="bi bi-pin-map-fill text-primary"></i> Representations</h4>
+                            <ul class="list-unstyled small">
+                                <li class="mb-2">Geometric: polygons, points, networks</li>
+                                <li class="mb-2">Cognitive: landmarks, mental maps</li>
+                                <li class="mb-2">Social: practices, meanings, identities</li>
+                                <li class="mb-2">Hybrid: linking geometry with qualities</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4><i class="bi bi-lightbulb text-warning"></i> Key Considerations</h4>
+                            <ul class="small">
+                                <li>Balance computational needs with experiential richness</li>
+                                <li>Ensure inclusivity by representing diverse user needs</li>
+                                <li>Combine spatial and platial data sources</li>
+                                <li>Capture temporal variation in place meanings</li>
+                                <li>Support interpretability and transparency</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div class="card">
+                        <div class="card-body">
+                            <h4><i class="bi bi-book text-info"></i> Related Topics</h4>
+                            <div class="d-grid gap-2">
+                                <a href="../place-and-walking/platial-vs-spatial.html" class="btn btn-outline-primary btn-sm">Platial vs Spatial</a>
+                                <a href="../place-and-walking/mapping-place-qualities.html" class="btn btn-outline-primary btn-sm">Mapping Place Qualities</a>
+                                <a href="../resources/data-sharing.html" class="btn btn-outline-primary btn-sm">Data Sharing</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+    <footer class="bg-dark p-4">
+        <div class="container text-center text-white">
+            <div class="row">
+                <div class="col-md-3 align-self-center">
+                    <a href="https://nottingham.ac.uk/">
+                        <img class="img-fluid p-2" src="../../images/funding-logos/Nottingham.png">
+                    </a>
+                </div>
+                <div class="col-md-3 align-self-center">
+                    <a href="https://cdt.horizon.ac.uk/">
+                        <img class="img-fluid p-2" src="../../images/funding-logos/horizon.webp">
+                    </a>
+                </div>
+                <div class="col-md-3 align-self-center">
+                </div>
+                <div class="col-md-3 align-self-center">
+                    <a href="https://www.ukri.org/councils/epsrc/">
+                        <img class="img-fluid p-2" src="../../images/funding-logos/ukri.webp">
+                    </a>
+                </div>
+            </div>
+            <p class="mt-4">This activity was supported by the Horizon CDT Impact Grant, made possible through funding
+                from the Engineering and Physical Sciences Research Council (EPSRC) [grant number EP/S023305/1].</p>
+            <hr>
+            <p>Website and initial organisation by <a class="text-white" href="https://jwilliams.science/">James
+                    Williams</a> | <a class="text-white" href="../../imports/sources.md">Attribution</a></p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../../imports/Bootstrap/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../../imports/vanilla-tilt/vanilla-tilt.js"></script>
+</body>
+</html>

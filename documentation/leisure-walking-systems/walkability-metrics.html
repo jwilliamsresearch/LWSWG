@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Walkability Metrics | LWSWG</title>
+    <link rel="icon" type="image/png" href="../../images/favicon-48x48.png" sizes="48x48" />
+    <link href="../../imports/Bootswatch/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="../../index.html">
+                    <img src="../../images/lwswg-logo.png" alt="LWSWG (Leisure Walking Systems Working Group) Logo"
+                        height="52">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="main-nav">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="../../index.html">Home</a>
+                        <a class="nav-link" href="../../about.html">About</a>
+                        <a class="nav-link" href="../../meetings.html">Meetings</a>
+                        <li class="nav-item dropdown d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle active" href="#" id="researchHubDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Research Hub
+                            </a>
+                            <div class="dropdown-menu mega-menu-dropdown" aria-labelledby="researchHubDropdown">
+                                <div class="mega-menu-row">
+                                    <div class="mega-menu-col-visual-dropdown">
+                                        <a href="../" class="research-hub-link">
+                                            <h2>Research Hub</h2>
+                                            <p>
+                                                Explore foundational goals, structure, concepts, project history, and navigation tips.
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header leisure-walking">
+                                            Leisure Walking Systems
+                                        </h4>
+                                        <ul>
+                                            <li><a href="../leisure-walking-systems/recommendation-systems.html">Recommendation Systems</a></li>
+                                            <li><a href="../leisure-walking-systems/geospatial-integration.html">Geospatial Integration</a></li>
+                                            <li><a href="../leisure-walking-systems/route-algorithms.html">Route Algorithms</a></li>
+                                            <li><a href="../design/user-experience.html">User Personas</a></li>
+                                            <li><a href="../leisure-walking-systems/contextual-factors.html">Contextual Factors</a></li>
+                                            <li><a href="../leisure-walking-systems/walkability-metrics.html">Walkability Metrics</a></li>
+                                            <li><a href="../leisure-walking-systems/app-types-comparison.html">App Types Comparison</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header place-walking">
+                                            Place & Walking
+                                        </h4>
+                                        <ul>
+                                            <li><a href="../place-and-walking/place-representation.html">Place Representation</a></li>
+                                            <li><a href="../place-and-walking/platial-gis.html">Platial GIS</a></li>
+                                            <li><a href="../place-and-walking/technical-architecture.html">Platial Architecture</a></li>
+                                            <li><a href="../place-and-walking/designing-for-place.html">Designing for Place</a></li>
+                                            <li><a href="../place-and-walking/case-studies-by-region.html">Case Studies by Region</a></li>
+                                            <li><a href="../place-and-walking/mapping-place-qualities.html">Mapping Place Qualities</a></li>
+                                            <li><a href="../place-and-walking/platial-vs-spatial.html">Platial vs Spatial</a></li>
+                                            <li><a href="../place-and-walking/cultural-dimensions.html">Cultural Dimensions</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header methods-evaluation">
+                                            Methods & Evaluation
+                                        </h4>
+                                        <ul>
+                                            <li><a href="../methods-and-evaluation/research-methodology.html">Think-Aloud Guide</a></li>
+                                            <li><a href="../methods-and-evaluation/checklist.html">Planning Checklist</a></li>
+                                            <li><a href="../methods-and-evaluation/evaluation-framework.html">Evaluation Framework</a></li>
+                                            <li><a href="../methods-and-evaluation/subjective-vs-objective.html">Subjective vs Objective</a></li>
+                                            <li><a href="../methods-and-evaluation/capturing-place-qualities.html">Capturing Place Qualities</a></li>
+                                            <li><a href="../methods-and-evaluation/ethical-considerations.html">Ethical Considerations</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header design">
+                                            Design
+                                        </h4>
+                                        <ul>
+                                            <li><a href="../design/slowness-and-serendipity.html">Slowness & Serendipity</a></li>
+                                            <li><a href="../design/user-experience.html">UX Patterns</a></li>
+                                            <li><a href="../design/route-interfaces.html">Route Interfaces</a></li>
+                                            <li><a href="../design/use-case-comparison.html">Use Case Comparison</a></li>
+                                            <li><a href="../design/accessibility.html">Accessibility</a></li>
+                                            <li><a href="../design/visual-cues.html">Visual Cues</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link active" href="../">Research Hub</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="impactOutputsDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Impact Outputs
+                            </a>
+                            <div class="dropdown-menu mega-menu-dropdown" aria-labelledby="impactOutputsDropdown">
+                                <div class="mega-menu-row">
+                                    <div class="mega-menu-col-visual-dropdown">
+                                        <a href="../../impact/" class="research-hub-link">
+                                            <h2>Impact Outputs</h2>
+                                            <p style="text-align: center;">
+                                                Explore project deliverables, technical reports, and demonstrator systems.
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header outputs">
+                                            Outputs
+                                        </h4>
+                                        <ul>
+                                            <li><a href="../../impact/benefits.html">Benefits & Differentiators</a></li>
+                                            <li><a href="../../impact/digital.html">Digital Presence</a></li>
+                                            <li><a href="../../impact/demonstrator.html">Demonstrator System</a></li>
+                                            <li><a href="../../impact/technical-report.html">Initial Technical Report</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header resources">
+                                            Resources
+                                        </h4>
+                                        <ul>
+                                            <li><a href="../resources/data-sharing.html">Datasets & Standards</a></li>
+                                            <li><a href="../resources/templates-and-scripts.html">Templates & Scripts</a></li>
+                                            <li><a href="../methods-and-evaluation/checklist.html">Implementation Guides</a></li>
+                                            <li><a href="../resources/glossary.html">Glossary</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="main-header" class="">
+            <div class="container">
+                <div class="card p-4 bg-dark-transparent text-white">
+                    <div class="row">
+                        <div class="col-md-4 align-self-center">
+                            <img id="main-logo" class="img-fluid mx-auto d-block my-2" src="../../images/lwswg-logo.png"
+                                alt="Leisure Walking Systems Working Group">
+                        </div>
+                        <div class="col-md-8 align-self-center">
+                            <h1>Walkability Metrics</h1>
+                            <p class="lead mb-0">Walkability metrics are used to assess the quality of a walking environment, and can be used to inform the design of leisure walking experiences.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container py-5">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2>Introduction</h2>
+                        <p>Walkability metrics provide a systematic means of quantifying how conducive an environment is for walking. They are widely used in urban planning, public health, and digital mapping platforms, often providing users with an accessible score or rating of walkability in a given location. Such metrics can inform personal decision-making, urban design strategies, and policy interventions.</p>
+                        
+                        <p>Popular measures such as Walk Score offer a generalised, consumer-facing indicator of walkability. However, emerging approaches seek to capture more nuanced and context-sensitive aspects of walking environments, ranging from accessibility and safety to aesthetics and social interaction. Designing effective walkability metrics requires balancing methodological rigour, interpretability, and practical applicability across diverse urban and rural contexts.</p>
+                    </div>
+                </div>
+    
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2>Established Metrics</h2>
+                        
+                        <h3>Walk Score</h3>
+                        <p>Walk Score is a widely adopted metric that evaluates the proximity of amenities such as shops, schools, and public transport stops. The method assigns higher scores to neighbourhoods with greater accessibility to destinations within walking distance. While effective for broad comparisons, Walk Score has limitations, including its focus on proximity rather than route quality or user experience.</p>
+    
+                        <h3>Composite Indices</h3>
+                        <p>Research studies and planning organisations often develop composite indices of walkability that combine multiple dimensions. These may include connectivity (street network density, intersection counts), land-use mix (residential, retail, recreational), and pedestrian infrastructure (pavements, crossings, lighting). Such indices allow for multidimensional analysis but can be complex to interpret and replicate consistently across geographies.</p>
+                    </div>
+                </div>
+    
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2>Limitations and Critiques</h2>
+                        
+                        <h3>Over-Simplification</h3>
+                        <p>Single-number scores risk oversimplifying the walking experience, failing to capture environmental quality, safety, or cultural factors. They may reproduce biases in available data sources, privileging certain types of destinations or ignoring informal community assets.</p>
+    
+                        <h3>Contextual Blind Spots</h3>
+                        <p>Metrics developed for North American or European cities may not transfer easily to other global contexts, where patterns of urban form, cultural practices, and walking behaviour differ substantially. Moreover, many indices do not account for temporal variations such as night-time safety or seasonal accessibility.</p>
+                    </div>
+                </div>
+    
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2>Developing Custom Metrics</h2>
+                        
+                        <h3>User-Centred Approaches</h3>
+                        <p>Custom walkability metrics can be designed to reflect specific user needs and values. For instance, older adults may prioritise benches and step-free access, while leisure walkers may value green routes and scenic views. Participatory approaches, surveys, and community workshops can help ensure that metrics align with lived experience.</p>
+    
+                        <h3>Data and Technology</h3>
+                        <p>Open data sources such as OpenStreetMap and government datasets enable the construction of custom indices, while sensor data and mobile applications can provide real-time context. Computational frameworks such as H3 spatial grids or machine learning models can scale walkability assessments across cities, allowing for flexible weighting of factors like safety, accessibility, and aesthetics.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h4><i class="bi bi-exclamation-triangle-fill text-warning"></i> Common Pitfalls</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="bi bi-x-circle text-danger"></i> Over-reliance on proximity alone</li>
+                            <li class="mb-2"><i class="bi bi-x-circle text-danger"></i> Ignoring safety and accessibility dimensions</li>
+                            <li class="mb-2"><i class="bi bi-x-circle text-danger"></i> Applying Western-centric models globally</li>
+                            <li class="mb-2"><i class="bi bi-x-circle text-danger"></i> Treating walkability as a static rather than dynamic measure</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h4><i class="bi bi-tools text-primary"></i> Key Tools and Methods</h4>
+                        <ul>
+                            <li>Walk Score API for baseline measures</li>
+                            <li>QGIS for spatial walkability analysis</li>
+                            <li>OpenStreetMap for open geodata on amenities and paths</li>
+                            <li>Network analysis libraries (e.g., OSMnx, pgRouting)</li>
+                            <li>H3 grids for scalable spatial indexing</li>
+                            <li>Machine learning for weighting and prediction</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h4><i class="bi bi-list-check text-success"></i> Metric Design Checklist</h4>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="check1">
+                            <label class="form-check-label" for="check1">
+                                Define user groups and purposes
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="check2">
+                            <label class="form-check-label" for="check2">
+                                Select relevant data sources
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="check3">
+                            <label class="form-check-label" for="check3">
+                                Balance proximity and route quality
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="check4">
+                            <label class="form-check-label" for="check4">
+                                Ensure adaptability to local context
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="check5">
+                            <label class="form-check-label" for="check5">
+                                Validate with user feedback and ground-truthing
+                            </label>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="card-body">
+                        <h4><i class="bi bi-book text-info"></i> Related Topics</h4>
+                        <div class="d-grid gap-2">
+                            <a href="../resources/data-sharing.html" class="btn btn-outline-primary btn-sm">Data Sharing</a>
+                            <a href="../place-and-walking/case-studies-by-region.html" class="btn btn-outline-primary btn-sm">Case Studies by Region</a>
+                            <a href="../place-and-walking/platial-gis.html" class="btn btn-outline-primary btn-sm">Platial GIS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="bg-dark p-4">
+        <div class="container text-center text-white">
+            <div class="row">
+                <div class="col-md-3 align-self-center">
+                    <a href="https://nottingham.ac.uk/">
+                        <img class="img-fluid p-2" src="../../images/funding-logos/Nottingham.png">
+                    </a>
+                </div>
+                <div class="col-md-3 align-self-center">
+                    <a href="https://cdt.horizon.ac.uk/">
+                        <img class="img-fluid p-2" src="../../images/funding-logos/horizon.webp"> 
+                    </a>
+                </div>
+                <div class="col-md-3 align-self-center">
+
+                </div>
+                <div class="col-md-3 align-self-center">
+                    <a href="https://www.ukri.org/councils/epsrc/">
+                        <img class="img-fluid p-2" src="../../images/funding-logos/ukri.webp">
+                    </a>
+                </div>
+            </div>
+            <p class="mt-4">This activity was supported by the Horizon CDT Impact Grant, made possible through funding
+                from the Engineering and Physical Sciences Research Council (EPSRC) [grant number EP/S023305/1]. </p>
+            <hr>
+            <p>Website and initial organisation by <a class="text-white" href="https://jwilliams.science/">James
+                    Williams</a> | <a class="text-white" href="../../imports/sources.md">Attribution</a></p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../../imports/Bootstrap/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../../imports/vanilla-tilt/vanilla-tilt.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contextual Factors | LWSWG</title>
+    <link rel="icon" type="image/png" href="../../images/favicon-48x48.png" sizes="48x48" />
+    <link href="../../imports/Bootswatch/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="../../index.html">
+                    <img src="../../images/lwswg-logo.png" alt="LWSWG (Leisure Walking Systems Working Group) Logo"
+                        height="52">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="main-nav">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="../../index.html">Home</a>
+                        <a class="nav-link" href="../../about.html">About</a>
+                        <a class="nav-link" href="../../meetings.html">Meetings</a>
+                        <li class="nav-item dropdown d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle active" href="#" id="researchHubDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Research Hub
+                            </a>
+                            <div class="dropdown-menu mega-menu-dropdown" aria-labelledby="researchHubDropdown">
+                                <div class="mega-menu-row">
+                                    <div class="mega-menu-col-visual-dropdown">
+                                        <a href="../" class="research-hub-link">
+                                            <h2>Research Hub</h2>
+                                            <p>
+                                                Explore foundational goals, structure, concepts, project history, and navigation tips.
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header leisure-walking">
+                                            Leisure Walking Systems
+                                        </h4>
+                                        <ul>
+                                            <li><a href="../leisure-walking-systems/recommendation-systems.html">Recommendation Systems</a></li>
+                                            <li><a href="../leisure-walking-systems/geospatial-integration.html">Geospatial Integration</a></li>
+                                            <li><a href="../leisure-walking-systems/route-algorithms.html">Route Algorithms</a></li>
+                                            <li><a href="../design/user-experience.html">User Personas</a></li>
+                                            <li><a href="../leisure-walking-systems/contextual-factors.html">Contextual Factors</a></li>
+                                            <li><a href="../leisure-walking-systems/walkability-metrics.html">Walkability Metrics</a></li>
+                                            <li><a href="../leisure-walking-systems/app-types-comparison.html">App Types Comparison</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header place-walking">
+                                            Place & Walking
+                                        </h4>
+                                        <ul>
+                                            <li><a href="../place-and-walking/place-representation.html">Place Representation</a></li>
+                                            <li><a href="../place-and-walking/platial-gis.html">Platial GIS</a></li>
+                                            <li><a href="../place-and-walking/technical-architecture.html">Platial Architecture</a></li>
+                                            <li><a href="../place-and-walking/designing-for-place.html">Designing for Place</a></li>
+                                            <li><a href="../place-and-walking/case-studies-by-region.html">Case Studies by Region</a></li>
+                                            <li><a href="../place-and-walking/mapping-place-qualities.html">Mapping Place Qualities</a></li>
+                                            <li><a href="../place-and-walking/platial-vs-spatial.html">Platial vs Spatial</a></li>
+                                            <li><a href="../place-and-walking/cultural-dimensions.html">Cultural Dimensions</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header methods-evaluation">
+                                            Methods & Evaluation
+                                        </h4>
+                                        <ul>
+                                            <li><a href="../methods-and-evaluation/research-methodology.html">Think-Aloud Guide</a></li>
+                                            <li><a href="../methods-and-evaluation/checklist.html">Planning Checklist</a></li>
+                                            <li><a href="../methods-and-evaluation/evaluation-framework.html">Evaluation Framework</a></li>
+                                            <li><a href="../methods-and-evaluation/subjective-vs-objective.html">Subjective vs Objective</a></li>
+                                            <li><a href="../methods-and-evaluation/capturing-place-qualities.html">Capturing Place Qualities</a></li>
+                                            <li><a href="../methods-and-evaluation/ethical-considerations.html">Ethical Considerations</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header design">
+                                            Design
+                                        </h4>
+                                        <ul>
+                                            <li><a href="../design/slowness-and-serendipity.html">Slowness & Serendipity</a></li>
+                                            <li><a href="../design/user-experience.html">UX Patterns</a></li>
+                                            <li><a href="../design/route-interfaces.html">Route Interfaces</a></li>
+                                            <li><a href="../design/use-case-comparison.html">Use Case Comparison</a></li>
+                                            <li><a href="../design/accessibility.html">Accessibility</a></li>
+                                            <li><a href="../design/visual-cues.html">Visual Cues</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link active" href="../">Research Hub</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="impactOutputsDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Impact Outputs
+                            </a>
+                            <div class="dropdown-menu mega-menu-dropdown" aria-labelledby="impactOutputsDropdown">
+                                <div class="mega-menu-row">
+                                    <div class="mega-menu-col-visual-dropdown">
+                                        <a href="../../impact/" class="research-hub-link">
+                                            <h2>Impact Outputs</h2>
+                                            <p style="text-align: center;">
+                                                Explore project deliverables, technical reports, and demonstrator systems.
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header outputs">
+                                            Outputs
+                                        </h4>
+                                        <ul>
+                                            <li><a href="../../impact/benefits.html">Benefits & Differentiators</a></li>
+                                            <li><a href="../../impact/digital.html">Digital Presence</a></li>
+                                            <li><a href="../../impact/demonstrator.html">Demonstrator System</a></li>
+                                            <li><a href="../../impact/technical-report.html">Initial Technical Report</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header resources">
+                                            Resources
+                                        </h4>
+                                        <ul>
+                                            <li><a href="../resources/data-sharing.html">Datasets & Standards</a></li>
+                                            <li><a href="../resources/templates-and-scripts.html">Templates & Scripts</a></li>
+                                            <li><a href="../methods-and-evaluation/checklist.html">Implementation Guides</a></li>
+                                            <li><a href="../resources/glossary.html">Glossary</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="main-header" class="">
+            <div class="container">
+                <div class="card p-4 bg-dark-transparent text-white">
+                    <div class="row">
+                        <div class="col-md-4 align-self-center">
+                            <img id="main-logo" class="img-fluid mx-auto d-block my-2" src="../../images/lwswg-logo.png"
+                                alt="Leisure Walking Systems Working Group">
+                        </div>
+                        <div class="col-md-8 align-self-center">
+                            <h1>Contextual Factors</h1>
+                            <p class="lead mb-0">How contextual factors such as weather, time of day, and the environment influence the walking experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container py-5">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2>Introduction</h2>
+                        <p>Walking is shaped by a range of contextual factors that extend beyond the physical pathway itself. The experience of walking is not simply determined by route geometry or distance, but by wider environmental, social, and personal conditions. Understanding these contextual influences is critical for designing walking systems that reflect lived experience and support meaningful engagement with urban and rural spaces.</p>
+                        
+                        <p>These factors include environmental qualities such as air quality, noise levels, and aesthetics; infrastructural conditions such as pavement continuity and lighting; and socio-cultural influences such as safety perceptions and cultural practices. Collectively, they determine how people interpret the walk, influencing comfort, motivation, and frequency of walking activity.</p>
+                    </div>
+                </div>
+    
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2>Environmental and Physical Contexts</h2>
+                        
+                        <h3>Natural Environment</h3>
+                        <p>The presence of greenery, biodiversity, and open landscapes enhances walking experiences, often contributing to perceptions of well-being. Factors such as seasonal variation, weather conditions, and air quality play a significant role in shaping both the attractiveness and feasibility of walking routes. For instance, shade in summer or shelter in winter may determine the usability of particular paths.</p>
+    
+                        <h3>Built Environment</h3>
+                        <p>The structure and design of the built environment exert considerable influence on walking. Pavement width, surface quality, and gradient affect accessibility and comfort, particularly for people with mobility challenges. Street furniture, crossings, and lighting not only influence safety but also perceptions of legibility and wayfinding. Urban density and land-use diversity can encourage walking by offering destinations in close proximity.</p>
+                    </div>
+                </div>
+    
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2>Social and Cultural Contexts</h2>
+                        
+                        <h3>Safety and Security</h3>
+                        <p>Perceived and actual safety are key determinants of walking behaviour. Factors include traffic volumes, speed limits, lighting conditions, and the presence of other pedestrians. Crime rates, anti-social behaviour, and social trust within an area also affect whether individuals feel comfortable walking at different times of day.</p>
+    
+                        <h3>Cultural and Community Norms</h3>
+                        <p>Walking practices are embedded within cultural values and community traditions. In some societies walking is a normative form of mobility, whilst in others it may be undervalued relative to motorised transport. Community events, religious practices, and social gatherings can reinforce or diminish the prominence of walking as part of daily life. These cultural contexts are critical for interpreting the significance of walking in different settings.</p>
+                    </div>
+                </div>
+    
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2>Personal and Individual Contexts</h2>
+                        
+                        <h3>Health and Accessibility</h3>
+                        <p>Individual health, age, and mobility status influence walking opportunities. Walking can be a form of exercise, a therapeutic activity, or a mobility challenge, depending on personal circumstances. Accessibility considerations such as step-free access, rest points, and clear signage are vital for supporting inclusive walking environments.</p>
+    
+                        <h3>Purpose and Motivation</h3>
+                        <p>The purpose of the walk—whether leisure, commuting, or incidental travel—shapes expectations and behaviours. Leisure walking often values aesthetics and tranquillity, whereas commuting prioritises efficiency and directness. Motivational factors such as personal goals, social connections, or digital tools (e.g., fitness trackers) influence engagement and route choice.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h4><i class="bi bi-exclamation-triangle-fill text-warning"></i> Common Oversights</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="bi bi-x-circle text-danger"></i> Neglecting seasonal and weather impacts</li>
+                            <li class="mb-2"><i class="bi bi-x-circle text-danger"></i> Overlooking accessibility for diverse users</li>
+                            <li class="mb-2"><i class="bi bi-x-circle text-danger"></i> Assuming universal safety perceptions</li>
+                            <li class="mb-2"><i class="bi bi-x-circle text-danger"></i> Ignoring cultural influences on walking practices</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h4><i class="bi bi-tools text-primary"></i> Key Considerations</h4>
+                        <ul>
+                            <li>Environmental quality indicators (air, noise, greenery)</li>
+                            <li>Infrastructure audits (pavements, lighting, crossings)</li>
+                            <li>Safety assessments (traffic, crime, visibility)</li>
+                            <li>Cultural and community mapping</li>
+                            <li>Inclusive design principles</li>
+                            <li>User-centred surveys and feedback</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h4><i class="bi bi-list-check text-success"></i> Context Checklist</h4>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="check1">
+                            <label class="form-check-label" for="check1">
+                                Assess environmental qualities
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="check2">
+                            <label class="form-check-label" for="check2">
+                                Evaluate built environment conditions
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="check3">
+                            <label class="form-check-label" for="check3">
+                                Review safety and security factors
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="check4">
+                            <label class="form-check-label" for="check4">
+                                Capture cultural and community contexts
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="check5">
+                            <label class="form-check-label" for="check5">
+                                Incorporate user health and accessibility needs
+                            </label>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="card-body">
+                        <h4><i class="bi bi-book text-info"></i> Related Topics</h4>
+                        <div class="d-grid gap-2">
+                            <a href="../resources/glossary.html" class="btn btn-outline-primary btn-sm">Glossary</a>
+                            <a href="../place-and-walking/technical-architecture.html" class="btn btn-outline-primary btn-sm">Technical Architecture</a>
+                            <a href="../place-and-walking/cultural-dimensions.html" class="btn btn-outline-primary btn-sm">Cultural Dimensions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="bg-dark p-4">
+        <div class="container text-center text-white">
+            <div class="row">
+                <div class="col-md-3 align-self-center">
+                    <a href="https://nottingham.ac.uk/">
+                        <img class="img-fluid p-2" src="../../images/funding-logos/Nottingham.png">
+                    </a>
+                </div>
+                <div class="col-md-3 align-self-center">
+                    <a href="https://cdt.horizon.ac.uk/">
+                        <img class="img-fluid p-2" src="../../images/funding-logos/horizon.webp"> 
+                    </a>
+                </div>
+                <div class="col-md-3 align-self-center">
+
+                </div>
+                <div class="col-md-3 align-self-center">
+                    <a href="https://www.ukri.org/councils/epsrc/">
+                        <img class="img-fluid p-2" src="../../images/funding-logos/ukri.webp">
+                    </a>
+                </div>
+            </div>
+            <p class="mt-4">This activity was supported by the Horizon CDT Impact Grant, made possible through funding
+                from the Engineering and Physical Sciences Research Council (EPSRC) [grant number EP/S023305/1]. </p>
+            <hr>
+            <p>Website and initial organisation by <a class="text-white" href="https://jwilliams.science/">James
+                    Williams</a> | <a class="text-white" href="../../imports/sources.md">Attribution</a></p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../../imports/Bootstrap/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../../imports/vanilla-tilt/vanilla-tilt.js"></script>
+</body>
+
+</html>

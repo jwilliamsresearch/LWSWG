@@ -2,119 +2,243 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://lwswg.jwilliams.science/</loc>
-        <lastmod>2025-09-02</lastmod>
+        <lastmod>2025-09-03</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://lwswg.jwilliams.science/about.html</loc>
-        <lastmod>2025-09-02</lastmod>
+        <lastmod>2025-09-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://lwswg.jwilliams.science/meetings.html</loc>
-        <lastmod>2025-09-02</lastmod>
+        <lastmod>2025-09-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://lwswg.jwilliams.science/resources.html</loc>
-        <lastmod>2025-09-02</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
     </url>
     
     <!-- Documentation Pages -->
     <url>
         <loc>https://lwswg.jwilliams.science/documentation/</loc>
-        <lastmod>2025-09-02</lastmod>
+        <lastmod>2025-09-03</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
+    
+    <!-- Leisure Walking Systems -->
     <url>
-        <loc>https://lwswg.jwilliams.science/documentation/recommendation-systems.html</loc>
-        <lastmod>2025-09-02</lastmod>
+        <loc>https://lwswg.jwilliams.science/documentation/leisure-walking-systems/recommendation-systems.html</loc>
+        <lastmod>2025-09-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://lwswg.jwilliams.science/documentation/geospatial-integration.html</loc>
-        <lastmod>2025-09-02</lastmod>
+        <loc>https://lwswg.jwilliams.science/documentation/leisure-walking-systems/geospatial-integration.html</loc>
+        <lastmod>2025-09-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://lwswg.jwilliams.science/documentation/place-representation.html</loc>
-        <lastmod>2025-09-02</lastmod>
+        <loc>https://lwswg.jwilliams.science/documentation/leisure-walking-systems/route-algorithms.html</loc>
+        <lastmod>2025-09-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://lwswg.jwilliams.science/documentation/data-sharing.html</loc>
-        <lastmod>2025-09-02</lastmod>
+        <loc>https://lwswg.jwilliams.science/documentation/leisure-walking-systems/contextual-factors.html</loc>
+        <lastmod>2025-09-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://lwswg.jwilliams.science/documentation/route-algorithms.html</loc>
-        <lastmod>2025-09-02</lastmod>
+        <loc>https://lwswg.jwilliams.science/documentation/leisure-walking-systems/walkability-metrics.html</loc>
+        <lastmod>2025-09-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://lwswg.jwilliams.science/documentation/user-experience.html</loc>
-        <lastmod>2025-09-02</lastmod>
+        <loc>https://lwswg.jwilliams.science/documentation/leisure-walking-systems/app-types-comparison.html</loc>
+        <lastmod>2025-09-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Place and Walking -->
+    <url>
+        <loc>https://lwswg.jwilliams.science/documentation/place-and-walking/place-representation.html</loc>
+        <lastmod>2025-09-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://lwswg.jwilliams.science/documentation/technical-architecture.html</loc>
-        <lastmod>2025-09-02</lastmod>
+        <loc>https://lwswg.jwilliams.science/documentation/place-and-walking/platial-gis.html</loc>
+        <lastmod>2025-09-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://lwswg.jwilliams.science/documentation/research-methodology.html</loc>
-        <lastmod>2025-09-02</lastmod>
+        <loc>https://lwswg.jwilliams.science/documentation/place-and-walking/technical-architecture.html</loc>
+        <lastmod>2025-09-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://lwswg.jwilliams.science/documentation/checklist.html</loc>
-        <lastmod>2025-09-02</lastmod>
+        <loc>https://lwswg.jwilliams.science/documentation/place-and-walking/designing-for-place.html</loc>
+        <lastmod>2025-09-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://lwswg.jwilliams.science/documentation/glossary.html</loc>
-        <lastmod>2025-09-02</lastmod>
+        <loc>https://lwswg.jwilliams.science/documentation/place-and-walking/case-studies-by-region.html</loc>
+        <lastmod>2025-09-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://lwswg.jwilliams.science/documentation/place-and-walking/mapping-place-qualities.html</loc>
+        <lastmod>2025-09-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://lwswg.jwilliams.science/documentation/place-and-walking/platial-vs-spatial.html</loc>
+        <lastmod>2025-09-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://lwswg.jwilliams.science/documentation/place-and-walking/cultural-dimensions.html</loc>
+        <lastmod>2025-09-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Methods and Evaluation -->
+    <url>
+        <loc>https://lwswg.jwilliams.science/documentation/methods-and-evaluation/research-methodology.html</loc>
+        <lastmod>2025-09-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://lwswg.jwilliams.science/documentation/methods-and-evaluation/checklist.html</loc>
+        <lastmod>2025-09-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://lwswg.jwilliams.science/documentation/methods-and-evaluation/evaluation-framework.html</loc>
+        <lastmod>2025-09-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://lwswg.jwilliams.science/documentation/methods-and-evaluation/subjective-vs-objective.html</loc>
+        <lastmod>2025-09-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://lwswg.jwilliams.science/documentation/methods-and-evaluation/capturing-place-qualities.html</loc>
+        <lastmod>2025-09-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://lwswg.jwilliams.science/documentation/methods-and-evaluation/ethical-considerations.html</loc>
+        <lastmod>2025-09-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Design -->
+    <url>
+        <loc>https://lwswg.jwilliams.science/documentation/design/slowness-and-serendipity.html</loc>
+        <lastmod>2025-09-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://lwswg.jwilliams.science/documentation/design/user-experience.html</loc>
+        <lastmod>2025-09-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://lwswg.jwilliams.science/documentation/design/route-interfaces.html</loc>
+        <lastmod>2025-09-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://lwswg.jwilliams.science/documentation/design/use-case-comparison.html</loc>
+        <lastmod>2025-09-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://lwswg.jwilliams.science/documentation/design/accessibility.html</loc>
+        <lastmod>2025-09-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://lwswg.jwilliams.science/documentation/design/visual-cues.html</loc>
+        <lastmod>2025-09-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Resources -->
+    <url>
+        <loc>https://lwswg.jwilliams.science/documentation/resources/data-sharing.html</loc>
+        <lastmod>2025-09-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://lwswg.jwilliams.science/documentation/resources/templates-and-scripts.html</loc>
+        <lastmod>2025-09-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://lwswg.jwilliams.science/documentation/resources/glossary.html</loc>
+        <lastmod>2025-09-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     
     <!-- Impact Pages -->
     <url>
+        <loc>https://lwswg.jwilliams.science/impact/</loc>
+        <lastmod>2025-09-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://lwswg.jwilliams.science/impact/benefits.html</loc>
-        <lastmod>2025-09-02</lastmod>
+        <lastmod>2025-09-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://lwswg.jwilliams.science/impact/digital.html</loc>
-        <lastmod>2025-09-02</lastmod>
+        <lastmod>2025-09-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://lwswg.jwilliams.science/impact/demonstrator.html</loc>
-        <lastmod>2025-09-02</lastmod>
+        <lastmod>2025-09-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://lwswg.jwilliams.science/impact/technical-report.html</loc>
-        <lastmod>2025-09-02</lastmod>
+        <lastmod>2025-09-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>

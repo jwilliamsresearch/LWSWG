@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Walking Route Algorithms and Optimization | Documentation | LWSWG</title>
+    <meta name="description" content="Comprehensive guide to algorithms for walking route planning, optimization, and pathfinding, including Dijkstra, A*, and multi-criteria approaches.">
+    <meta name="keywords" content="route algorithms, pathfinding, walking routes, Dijkstra algorithm, A-star, route optimization, graph algorithms, pedestrian routing">
+    <link rel="canonical" href="https://lwswg.jwilliams.science/documentation/leisure-walking-systems/route-algorithms.html">
+    <link rel="icon" type="image/png" href="../../images/favicon-48x48.png" sizes="48x48" />
+    <link href="../../imports/Bootswatch/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/custom.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="../../index.html">
+                    <img src="../../images/lwswg-logo.png" alt="LWSWG (Leisure Walking Systems Working Group) Logo"
+                        height="52">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="main-nav">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="../../index.html">Home</a>
+                        <a class="nav-link" href="../../about.html">About</a>
+                        <a class="nav-link" href="../../meetings.html">Meetings</a>
+                        <li class="nav-item dropdown d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle active" href="#" id="researchHubDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Research Hub
+                            </a>
+                            <div class="dropdown-menu mega-menu-dropdown" aria-labelledby="researchHubDropdown">
+                                <div class="mega-menu-row">
+                                    <div class="mega-menu-col-visual-dropdown">
+                                        <a href="../" class="research-hub-link">
+                                            <h2>Research Hub</h2>
+                                            <p>
+                                                Explore foundational goals, structure, concepts, project history, and navigation tips.
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header leisure-walking">
+                                            Leisure Walking Systems
+                                        </h4>
+                                        <ul>
+                                            <li><a href="../leisure-walking-systems/recommendation-systems.html">Recommendation Systems</a></li>
+                                            <li><a href="../leisure-walking-systems/geospatial-integration.html">Geospatial Integration</a></li>
+                                            <li><a href="../leisure-walking-systems/route-algorithms.html">Route Algorithms</a></li>
+                                            <li><a href="../design/user-experience.html">User Personas</a></li>
+                                            <li><a href="../leisure-walking-systems/contextual-factors.html">Contextual Factors</a></li>
+                                            <li><a href="../leisure-walking-systems/walkability-metrics.html">Walkability Metrics</a></li>
+                                            <li><a href="../leisure-walking-systems/app-types-comparison.html">App Types Comparison</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header place-walking">
+                                            Place & Walking
+                                        </h4>
+                                        <ul>
+                                            <li><a href="../place-and-walking/place-representation.html">Place Representation</a></li>
+                                            <li><a href="../place-and-walking/platial-gis.html">Platial GIS</a></li>
+                                            <li><a href="../place-and-walking/technical-architecture.html">Platial Architecture</a></li>
+                                            <li><a href="../place-and-walking/designing-for-place.html">Designing for Place</a></li>
+                                            <li><a href="../place-and-walking/case-studies-by-region.html">Case Studies by Region</a></li>
+                                            <li><a href="../place-and-walking/mapping-place-qualities.html">Mapping Place Qualities</a></li>
+                                            <li><a href="../place-and-walking/platial-vs-spatial.html">Platial vs Spatial</a></li>
+                                            <li><a href="../place-and-walking/cultural-dimensions.html">Cultural Dimensions</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header methods-evaluation">
+                                            Methods & Evaluation
+                                        </h4>
+                                        <ul>
+                                            <li><a href="../methods-and-evaluation/research-methodology.html">Think-Aloud Guide</a></li>
+                                            <li><a href="../methods-and-evaluation/checklist.html">Planning Checklist</a></li>
+                                            <li><a href="../methods-and-evaluation/evaluation-framework.html">Evaluation Framework</a></li>
+                                            <li><a href="../methods-and-evaluation/subjective-vs-objective.html">Subjective vs Objective</a></li>
+                                            <li><a href="../methods-and-evaluation/capturing-place-qualities.html">Capturing Place Qualities</a></li>
+                                            <li><a href="../methods-and-evaluation/ethical-considerations.html">Ethical Considerations</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header design">
+                                            Design
+                                        </h4>
+                                        <ul>
+                                            <li><a href="../design/slowness-and-serendipity.html">Slowness & Serendipity</a></li>
+                                            <li><a href="../design/user-experience.html">UX Patterns</a></li>
+                                            <li><a href="../design/route-interfaces.html">Route Interfaces</a></li>
+                                            <li><a href="../design/use-case-comparison.html">Use Case Comparison</a></li>
+                                            <li><a href="../design/accessibility.html">Accessibility</a></li>
+                                            <li><a href="../design/visual-cues.html">Visual Cues</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link active" href="../">Research Hub</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="impactOutputsDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Impact Outputs
+                            </a>
+                            <div class="dropdown-menu mega-menu-dropdown" aria-labelledby="impactOutputsDropdown">
+                                <div class="mega-menu-row">
+                                    <div class="mega-menu-col-visual-dropdown">
+                                        <a href="../../impact/" class="research-hub-link">
+                                            <h2>Impact Outputs</h2>
+                                            <p style="text-align: center;">
+                                                Explore project deliverables, technical reports, and demonstrator systems.
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header outputs">
+                                            Outputs
+                                        </h4>
+                                        <ul>
+                                            <li><a href="../../impact/benefits.html">Benefits & Differentiators</a></li>
+                                            <li><a href="../../impact/digital.html">Digital Presence</a></li>
+                                            <li><a href="../../impact/demonstrator.html">Demonstrator System</a></li>
+                                            <li><a href="../../impact/technical-report.html">Initial Technical Report</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-col-dropdown">
+                                        <h4 class="mega-menu-header resources">
+                                            Resources
+                                        </h4>
+                                        <ul>
+                                            <li><a href="../resources/data-sharing.html">Datasets & Standards</a></li>
+                                            <li><a href="../resources/templates-and-scripts.html">Templates & Scripts</a></li>
+                                            <li><a href="../methods-and-evaluation/checklist.html">Implementation Guides</a></li>
+                                            <li><a href="../resources/glossary.html">Glossary</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="main-header" class="">
+            <div class="container">
+                <div class="card p-4 bg-dark-transparent text-white">
+                    <div class="row">
+                        <div class="col-md-4 align-self-center">
+                            <img id="main-logo" class="img-fluid mx-auto d-block my-2" src="../../images/lwswg-logo.png"
+                                alt="Leisure Walking Systems Working Group">
+                        </div>
+                        <div class="col-md-8 align-self-center">
+                            <h1>Route Algorithms</h1>
+                            <p class="lead mb-0">How algorithms are used to find the best route in leisure walking systems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container py-5">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2>Introduction to Route Algorithms</h2>
+                        <p>Walking route algorithms form the computational foundation of pedestrian navigation systems. Unlike vehicle routing, walking algorithms must consider unique pedestrian constraints including accessibility requirements, elevation preferences, surface quality, safety considerations, and scenic value.</p>
+                        
+                        <p>These algorithms operate on graph representations of walkable space, where nodes represent locations and edges represent walkable connections between them, weighted by various factors relevant to pedestrian movement.</p>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2>Fundamental Graph Algorithms</h2>
+                        
+                        <h3>Dijkstra's Algorithm</h3>
+                        <p>Dijkstra's algorithm serves as the foundation for shortest path computation with guaranteed optimal results. It efficiently finds optimal paths from one source to all destinations in a graph, making it ideal for calculating multiple route options from a single starting point. The algorithm handles weighted graphs that can represent different edge costs such as distance, time, or elevation gain, providing flexibility for various routing objectives. With non-negative edge weights, Dijkstra's algorithm guarantees finding the shortest path, and modern priority queue implementations achieve O((V + E) log V) time complexity.</p>
+
+                        <h3>A* (A-star) Algorithm</h3>
+                        <p>The A* algorithm improves efficiency for single destination queries through heuristic guidance that uses estimated distance to the destination to direct the search process. Admissible heuristics such as Manhattan distance or Euclidean distance work well for pedestrian routing applications, providing realistic estimates that guide the algorithm towards the target. When properly designed with admissible heuristics, A* guarantees finding the shortest path whilst often exploring significantly fewer nodes than Dijkstra's algorithm for single-target searches, making it particularly suitable for real-time route calculation.</p>
+
+                        <h3>Bidirectional Search</h3>
+                        <p>Bidirectional search is an algorithmic technique that can significantly improve efficiency by searching from both the source and the destination simultaneously. This approach can substantially reduce the search space by decreasing the number of explored nodes compared to a unidirectional search. However, it introduces greater implementation complexity, requiring careful handling of both forward and backward searches to ensure they meet correctly. While it can improve memory efficiency for large graphs, the termination conditions require more complex logic to guarantee that the path discovered is indeed optimal.</p>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2>Pedestrian-Specific Considerations</h2>
+                        
+                        <h3>Multi-Criteria Route Optimisation</h3>
+                        <p>Walking routes frequently require balancing multiple competing objectives that reflect different user priorities and contextual factors. Distance minimisation seeks the shortest geometric path between origin and destination, whilst time optimisation focuses on the fastest route by considering walking speeds on different surfaces and terrain types. Elevation awareness addresses user preferences for minimising climbing or managing steep descents, particularly important for accessibility considerations. Scenic value maximisation directs routes through parks, waterfront areas, or other attractive locations that enhance the walking experience. Safety prioritisation emphasises well-lit paths, lower crime areas, and busy pedestrian zones that provide greater security and comfort for walkers.</p>
+
+                        <h3>Accessibility Requirements</h3>
+                        <p>Ensuring routes are suitable for users with different mobility needs is a critical aspect of pedestrian routing. This involves applying gradient constraints to filter out paths with slopes that exceed the maximum acceptable for wheelchair users or those with mobility aids. Surface quality is another key factor, where algorithms prioritise paved surfaces and smooth pathways while avoiding rough or uneven terrain. Obstacle avoidance is essential for navigating around permanent and temporary barriers such as steps, high curbs, narrow passages, or construction zones. Finally, the algorithm should account for specific infrastructure requirements, such as the availability of curb cuts, accessible crossings, and rest areas, to ensure a fully accessible journey.</p>
+
+                        <h3>Temporal Factors</h3>
+                        <p>Walking routes are often subject to time-dependent conditions that must be considered for accurate and reliable navigation. Time-of-day variations can affect route availability, such as paths through parks or buildings that close at night. Seasonal changes also play a significant role, with certain paths becoming inaccessible during winter months or seasonal attractions altering pedestrian flows. Weather dependencies are crucial, as routing engines may need to prioritise covered or sheltered routes during rain or avoid flood-prone areas. Lastly, event-based routing is necessary to navigate around temporary closures due to construction, festivals, or other special events.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h4><i class="bi bi-cpu-fill text-primary"></i> Algorithm Complexity</h4>
+                        <ul class="list-unstyled small">
+                            <li class="mb-2"><strong>Dijkstra:</strong> O((V+E) log V)</li>
+                            <li class="mb-2"><strong>A*:</strong> O(b^d) where b=branching factor</li>
+                            <li class="mb-2"><strong>Bidirectional:</strong> O(b^(d/2))</li>
+                            <li class="mb-2"><strong>Floyd-Warshall:</strong> O(V³)</li>
+                            <li class="mb-2">V = vertices, E = edges, d = depth</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h4><i class="bi bi-speedometer2 text-success"></i> Performance Factors</h4>
+                        <ul class="small">
+                            <li><strong>Graph size:</strong> Number of nodes and edges</li>
+                            <li><strong>Query frequency:</strong> One-time vs. repeated queries</li>
+                            <li><strong>Preprocessing time:</strong> Upfront computation investment</li>
+                            <li><strong>Memory usage:</strong> RAM requirements for data structures</li>
+                            <li><strong>Update frequency:</strong> How often graph data changes</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h4><i class="bi bi-diagram-3 text-info"></i> Graph Representations</h4>
+                        <ul class="small">
+                            <li><strong>Adjacency lists:</strong> Space-efficient for sparse graphs</li>
+                            <li><strong>Adjacency matrices:</strong> Fast edge lookup for dense graphs</li>
+                            <li><strong>Edge lists:</strong> Simple representation for basic operations</li>
+                            <li><strong>Spatial indexing:</strong> R-trees, quadtrees for geographic queries</li>
+                            <li><strong>Hierarchical structures:</strong> Multi-level representations</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4><i class="bi bi-book text-info"></i> Related Topics</h4>
+                        <div class="d-grid gap-2">
+                            <a href="../leisure-walking-systems/recommendation-systems.html" class="btn btn-outline-primary btn-sm">Recommendation Systems</a>
+                            <a href="../leisure-walking-systems/geospatial-integration.html" class="btn btn-outline-primary btn-sm">Geospatial Integration</a>
+                            <a href="../place-and-walking/technical-architecture.html" class="btn btn-outline-primary btn-sm">Technical Architecture</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark p-4">
+        <div class="container text-center text-white">
+            <div class="row">
+                <div class="col-md-3 align-self-center">
+                    <a href="https://nottingham.ac.uk/">
+                        <img class="img-fluid p-2" src="../../images/funding-logos/Nottingham.png">
+                    </a>
+                </div>
+                <div class="col-md-3 align-self-center">
+                    <a href="https://cdt.horizon.ac.uk/">
+                        <img class="img-fluid p-2" src="../../images/funding-logos/horizon.webp">
+                    </a>
+                </div>
+                <div class="col-md-3 align-self-center">
+                </div>
+                <div class="col-md-3 align-self-center">
+                    <a href="https://www.ukri.org/councils/epsrc/">
+                        <img class="img-fluid p-2" src="../../images/funding-logos/ukri.webp">
+                    </a>
+                </div>
+            </div>
+            <p class="mt-4">This activity was supported by the Horizon CDT Impact Grant, made possible through funding
+                from the Engineering and Physical Sciences Research Council (EPSRC) [grant number EP/S023305/1].</p>
+            <hr>
+            <p>Website and initial organisation by <a class="text-white" href="https://jwilliams.science/">James
+                    Williams</a> | <a class="text-white" href="../../imports/sources.md">Attribution</a></p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../../imports/Bootstrap/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../../imports/vanilla-tilt/vanilla-tilt.js"></script>
+</body>
+</html>

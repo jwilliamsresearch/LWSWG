@@ -1,26 +1,32 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Walking Systems Implementation Checklist | Documentation | LWSWG</title>
-    <meta name="description" content="Comprehensive checklist for implementing walking systems, covering technical considerations, user experience factors, data management, and deployment requirements.">
-    <meta name="keywords" content="walking systems checklist, implementation checklist, walking apps development, technical requirements, UX checklist">
-    <link rel="canonical" href="https://lwswg.jwilliams.science/documentation/methods-and-evaluation/checklist.html">
+    <meta name="description"
+        content="Comprehensive checklist for implementing walking systems, covering technical considerations, user experience factors, data management, and deployment requirements.">
+    <meta name="keywords"
+        content="walking systems checklist, implementation checklist, walking apps development, technical requirements, UX checklist">
+    <link rel="canonical"
+        href="https://lwswg.jwilliams.science/documentation/methods-and-evaluation/checklist.html">
     <link rel="icon" type="image/png" href="../../images/favicon-48x48.png" sizes="48x48" />
     <link href="../../imports/Bootswatch/bootstrap.min.css" rel="stylesheet">
     <link href="../../css/custom.css" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <nav class="navbar fixed-top navbar-expand-lg bg-dark" data-bs-theme="dark">
             <div class="container">
                 <a class="navbar-brand" href="../../index.html">
-                    <img src="../../images/lwswg-logo.png" alt="LWSWG (Leisure Walking Systems Working Group) Logo"
-                        height="52">
+                    <img src="../../images/lwswg-logo.png"
+                        alt="LWSWG (Leisure Walking Systems Working Group) Logo" height="52">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
-                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="main-nav">
@@ -29,16 +35,20 @@
                         <a class="nav-link" href="../../about.html">About</a>
                         <a class="nav-link" href="../../meetings.html">Meetings</a>
                         <li class="nav-item dropdown d-none d-lg-block">
-                            <a class="nav-link dropdown-toggle active" href="#" id="researchHubDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle active" href="#"
+                                id="researchHubDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 Research Hub
                             </a>
-                            <div class="dropdown-menu mega-menu-dropdown" aria-labelledby="researchHubDropdown">
+                            <div class="dropdown-menu mega-menu-dropdown"
+                                aria-labelledby="researchHubDropdown">
                                 <div class="mega-menu-row">
                                     <div class="mega-menu-col-visual-dropdown">
                                         <a href="../" class="research-hub-link">
                                             <h2>Research Hub</h2>
                                             <p>
-                                                Explore foundational goals, structure, concepts, project history, and navigation tips.
+                                                Explore foundational goals, structure, concepts,
+                                                project history, and navigation tips.
                                             </p>
                                         </a>
                                     </div>
@@ -47,13 +57,26 @@
                                             Leisure Walking Systems
                                         </h4>
                                         <ul>
-                                            <li><a href="../leisure-walking-systems/recommendation-systems.html">Recommendation Systems</a></li>
-                                            <li><a href="../leisure-walking-systems/geospatial-integration.html">Geospatial Integration</a></li>
-                                            <li><a href="../leisure-walking-systems/route-algorithms.html">Route Algorithms</a></li>
-                                            <li><a href="../design/user-experience.html">User Personas</a></li>
-                                            <li><a href="../leisure-walking-systems/contextual-factors.html">Contextual Factors</a></li>
-                                            <li><a href="../leisure-walking-systems/walkability-metrics.html">Walkability Metrics</a></li>
-                                            <li><a href="../leisure-walking-systems/app-types-comparison.html">App Types Comparison</a></li>
+                                            <li><a
+                                                    href="../leisure-walking-systems/recommendation-systems.html">Recommendation
+                                                    Systems</a></li>
+                                            <li><a
+                                                    href="../leisure-walking-systems/geospatial-integration.html">Geospatial
+                                                    Integration</a></li>
+                                            <li><a
+                                                    href="../leisure-walking-systems/route-algorithms.html">Route
+                                                    Algorithms</a></li>
+                                            <li><a href="../design/user-experience.html">User
+                                                    Personas</a></li>
+                                            <li><a
+                                                    href="../leisure-walking-systems/contextual-factors.html">Contextual
+                                                    Factors</a></li>
+                                            <li><a
+                                                    href="../leisure-walking-systems/walkability-metrics.html">Walkability
+                                                    Metrics</a></li>
+                                            <li><a
+                                                    href="../leisure-walking-systems/app-types-comparison.html">App
+                                                    Types Comparison</a></li>
                                         </ul>
                                     </div>
                                     <div class="mega-menu-col-dropdown">
@@ -61,14 +84,29 @@
                                             Place & Walking
                                         </h4>
                                         <ul>
-                                            <li><a href="../place-and-walking/place-representation.html">Place Representation</a></li>
-                                            <li><a href="../place-and-walking/platial-gis.html">Platial GIS</a></li>
-                                            <li><a href="../place-and-walking/technical-architecture.html">Platial Architecture</a></li>
-                                            <li><a href="../place-and-walking/designing-for-place.html">Designing for Place</a></li>
-                                            <li><a href="../place-and-walking/case-studies-by-region.html">Case Studies by Region</a></li>
-                                            <li><a href="../place-and-walking/mapping-place-qualities.html">Mapping Place Qualities</a></li>
-                                            <li><a href="../place-and-walking/platial-vs-spatial.html">Platial vs Spatial</a></li>
-                                            <li><a href="../place-and-walking/cultural-dimensions.html">Cultural Dimensions</a></li>
+                                            <li><a
+                                                    href="../place-and-walking/place-representation.html">Place
+                                                    Representation</a></li>
+                                            <li><a href="../place-and-walking/platial-gis.html">Platial
+                                                    GIS</a></li>
+                                            <li><a
+                                                    href="../place-and-walking/technical-architecture.html">Platial
+                                                    Architecture</a></li>
+                                            <li><a
+                                                    href="../place-and-walking/designing-for-place.html">Designing
+                                                    for Place</a></li>
+                                            <li><a
+                                                    href="../place-and-walking/case-studies-by-region.html">Case
+                                                    Studies by Region</a></li>
+                                            <li><a
+                                                    href="../place-and-walking/mapping-place-qualities.html">Mapping
+                                                    Place Qualities</a></li>
+                                            <li><a
+                                                    href="../place-and-walking/platial-vs-spatial.html">Platial
+                                                    vs Spatial</a></li>
+                                            <li><a
+                                                    href="../place-and-walking/cultural-dimensions.html">Cultural
+                                                    Dimensions</a></li>
                                         </ul>
                                     </div>
                                     <div class="mega-menu-col-dropdown">
@@ -76,12 +114,23 @@
                                             Methods & Evaluation
                                         </h4>
                                         <ul>
-                                            <li><a href="../methods-and-evaluation/research-methodology.html">Think-Aloud Guide</a></li>
-                                            <li><a href="../methods-and-evaluation/checklist.html">Planning Checklist</a></li>
-                                            <li><a href="../methods-and-evaluation/evaluation-framework.html">Evaluation Framework</a></li>
-                                            <li><a href="../methods-and-evaluation/subjective-vs-objective.html">Subjective vs Objective</a></li>
-                                            <li><a href="../methods-and-evaluation/capturing-place-qualities.html">Capturing Place Qualities</a></li>
-                                            <li><a href="../methods-and-evaluation/ethical-considerations.html">Ethical Considerations</a></li>
+                                            <li><a
+                                                    href="../methods-and-evaluation/research-methodology.html">Think-Aloud
+                                                    Guide</a></li>
+                                            <li><a href="../methods-and-evaluation/checklist.html">Planning
+                                                    Checklist</a></li>
+                                            <li><a
+                                                    href="../methods-and-evaluation/evaluation-framework.html">Evaluation
+                                                    Framework</a></li>
+                                            <li><a
+                                                    href="../methods-and-evaluation/subjective-vs-objective.html">Subjective
+                                                    vs Objective</a></li>
+                                            <li><a
+                                                    href="../methods-and-evaluation/capturing-place-qualities.html">Capturing
+                                                    Place Qualities</a></li>
+                                            <li><a
+                                                    href="../methods-and-evaluation/ethical-considerations.html">Ethical
+                                                    Considerations</a></li>
                                         </ul>
                                     </div>
                                     <div class="mega-menu-col-dropdown">
@@ -89,12 +138,19 @@
                                             Design
                                         </h4>
                                         <ul>
-                                            <li><a href="../design/slowness-and-serendipity.html">Slowness & Serendipity</a></li>
-                                            <li><a href="../design/user-experience.html">UX Patterns</a></li>
-                                            <li><a href="../design/route-interfaces.html">Route Interfaces</a></li>
-                                            <li><a href="../design/use-case-comparison.html">Use Case Comparison</a></li>
-                                            <li><a href="../design/accessibility.html">Accessibility</a></li>
-                                            <li><a href="../design/visual-cues.html">Visual Cues</a></li>
+                                            <li><a href="../design/slowness-and-serendipity.html">Slowness
+                                                    & Serendipity</a></li>
+                                            <li><a href="../design/user-experience.html">UX
+                                                    Patterns</a></li>
+                                            <li><a href="../design/route-interfaces.html">Route
+                                                    Interfaces</a></li>
+                                            <li><a href="../design/use-case-comparison.html">Use
+                                                    Case Comparison</a></li>
+                                            <li><a
+                                                    href="../design/accessibility.html">Accessibility</a>
+                                            </li>
+                                            <li><a href="../design/visual-cues.html">Visual Cues</a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -104,17 +160,19 @@
                             <a class="nav-link active" href="../">Research Hub</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="impactOutputsDropdown" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="impactOutputsDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Impact Outputs
                             </a>
-                            <div class="dropdown-menu mega-menu-dropdown" aria-labelledby="impactOutputsDropdown">
+                            <div class="dropdown-menu mega-menu-dropdown"
+                                aria-labelledby="impactOutputsDropdown">
                                 <div class="mega-menu-row">
                                     <div class="mega-menu-col-visual-dropdown">
                                         <a href="../../impact/" class="research-hub-link">
                                             <h2>Impact Outputs</h2>
                                             <p style="text-align: center;">
-                                                Explore project deliverables, technical reports, and demonstrator systems.
+                                                Explore project deliverables, technical reports, and
+                                                demonstrator systems.
                                             </p>
                                         </a>
                                     </div>
@@ -123,10 +181,14 @@
                                             Outputs
                                         </h4>
                                         <ul>
-                                            <li><a href="../../impact/benefits.html">Benefits & Differentiators</a></li>
-                                            <li><a href="../../impact/digital.html">Digital Presence</a></li>
-                                            <li><a href="../../impact/demonstrator.html">Demonstrator System</a></li>
-                                            <li><a href="../../impact/technical-report.html">Initial Technical Report</a></li>
+                                            <li><a href="../../impact/benefits.html">Benefits &
+                                                    Differentiators</a></li>
+                                            <li><a href="../../impact/digital.html">Digital
+                                                    Presence</a></li>
+                                            <li><a href="../../impact/demonstrator.html">Demonstrator
+                                                    System</a></li>
+                                            <li><a href="../../impact/technical-report.html">Initial
+                                                    Technical Report</a></li>
                                         </ul>
                                     </div>
                                     <div class="mega-menu-col-dropdown">
@@ -134,10 +196,14 @@
                                             Resources
                                         </h4>
                                         <ul>
-                                            <li><a href="../resources/data-sharing.html">Datasets & Standards</a></li>
-                                            <li><a href="../resources/templates-and-scripts.html">Templates & Scripts</a></li>
-                                            <li><a href="../methods-and-evaluation/checklist.html">Implementation Guides</a></li>
-                                            <li><a href="../resources/glossary.html">Glossary</a></li>
+                                            <li><a href="../resources/data-sharing.html">Datasets &
+                                                    Standards</a></li>
+                                            <li><a href="../resources/templates-and-scripts.html">Templates
+                                                    & Scripts</a></li>
+                                            <li><a href="../methods-and-evaluation/checklist.html">Implementation
+                                                    Guides</a></li>
+                                            <li><a href="../resources/glossary.html">Glossary</a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -147,390 +213,191 @@
                 </div>
             </div>
         </nav>
-    </header>
-    <main class="container py-5">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h2>Introduction to Walking Systems Implementation</h2>
-                        <p>Implementing walking systems requires careful consideration of multiple factors across technical, user experience, data management, and deployment domains. This checklist provides a comprehensive framework to ensure successful development and deployment of walking applications.</p>
-                        
-                        <p>Use this checklist throughout your development process to validate requirements, identify potential issues early, and ensure all critical aspects are addressed before launch.</p>
-                    </div>
-                </div>
-
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h2>Technical Requirements Checklist</h2>
-                        
-                        <h3>Core Functionality</h3>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="core1">
-                            <label class="form-check-label" for="core1">
-                                GPS location services integration and accuracy validation
-                            </label>
+        <div id="main-header" class="">
+            <div class="container">
+                <div class="card p-4 bg-dark-transparent text-white">
+                    <div class="row">
+                        <div class="col-md-4 align-self-center">
+                            <img id="main-logo" class="img-fluid mx-auto d-block my-2"
+                                src="../../images/lwswg-logo.png"
+                                alt="Leisure Walking Systems Working Group">
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="core2">
-                            <label class="form-check-label" for="core2">
-                                Route calculation and optimization algorithms
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="core3">
-                            <label class="form-check-label" for="core3">
-                                Real-time navigation and turn-by-turn directions
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="core4">
-                            <label class="form-check-label" for="core4">
-                                Offline map data and route caching
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="core5">
-                            <label class="form-check-label" for="core5">
-                                Battery optimization for continuous location tracking
-                            </label>
-                        </div>
-
-                        <h3>Data Management</h3>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="data1">
-                            <label class="form-check-label" for="data1">
-                                Geospatial database setup with spatial indexing
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="data2">
-                            <label class="form-check-label" for="data2">
-                                Data synchronization between client and server
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="data3">
-                            <label class="form-check-label" for="data3">
-                                User preference and history storage
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="data4">
-                            <label class="form-check-input" type="checkbox" id="data4">
-                                Data backup and recovery procedures
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="data5">
-                            <label class="form-check-label" for="data5">
-                                Privacy-compliant data handling and storage
-                            </label>
-                        </div>
-
-                        <h3>Performance & Scalability</h3>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="perf1">
-                            <label class="form-check-label" for="perf1">
-                                Sub-second route calculation response times
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="perf2">
-                            <label class="form-check-label" for="perf2">
-                                Efficient spatial query performance optimization
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="perf3">
-                            <label class="form-check-label" for="perf3">
-                                Horizontal scaling architecture for user growth
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="perf4">
-                            <label class="form-check-label" for="perf4">
-                                CDN integration for global map data delivery
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="perf5">
-                            <label class="form-check-label" for="perf5">
-                                Load testing with realistic user scenarios
-                            </label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h2>User Experience Checklist</h2>
-                        
-                        <h3>Interface Design</h3>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="ux1">
-                            <label class="form-check-label" for="ux1">
-                                Intuitive map interface with clear visual hierarchy
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="ux2">
-                            <label class="form-check-label" for="ux2">
-                                Responsive design for various screen sizes
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="ux3">
-                            <label class="form-check-label" for="ux3">
-                                Accessibility compliance (WCAG 2.1 AA standards)
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="ux4">
-                            <label class="form-check-label" for="ux4">
-                                Dark mode support for outdoor usage
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="ux5">
-                            <label class="form-check-label" for="ux5">
-                                Gesture-based navigation controls
-                            </label>
-                        </div>
-
-                        <h3>User Journey</h3>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="journey1">
-                            <label class="form-check-label" for="journey1">
-                                Seamless onboarding process with clear value proposition
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="journey2">
-                            <label class="form-check-label" for="journey2">
-                                Quick route planning with minimal user input
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="journey3">
-                            <label class="form-check-label" for="journey3">
-                                Progress tracking and achievement system
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="journey4">
-                            <label class="form-check-label" for="journey4">
-                                Social features and community engagement
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="journey5">
-                            <label class="form-check-label" for="journey5">
-                                Personalization based on user preferences and history
-                            </label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h2>Security & Privacy Checklist</h2>
-                        
-                        <h3>Data Protection</h3>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="sec1">
-                            <label class="form-check-label" for="sec1">
-                                End-to-end encryption for sensitive data transmission
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="sec2">
-                            <label class="form-check-label" for="sec2">
-                                GDPR compliance for European users
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="sec3">
-                            <label class="form-check-label" for="sec3">
-                                User consent management for location tracking
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="sec4">
-                            <label class="form-check-label" for="sec4">
-                                Data anonymization for analytics and research
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="sec5">
-                            <label class="form-check-label" for="sec5">
-                                Secure authentication and authorization systems
-                            </label>
-                        </div>
-
-                        <h3>Application Security</h3>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="appsec1">
-                            <label class="form-check-label" for="appsec1">
-                                Input validation and sanitization
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="appsec2">
-                            <label class="form-check-label" for="appsec2">
-                                Rate limiting and DDoS protection
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="appsec3">
-                            <label class="form-check-label" for="appsec3">
-                                Regular security audits and penetration testing
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="appsec4">
-                            <label class="form-check-label" for="appsec4">
-                                Secure API key management and rotation
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="appsec5">
-                            <label class="form-check-label" for="appsec5">
-                                Incident response plan and breach notification procedures
-                            </label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h2>Deployment & Maintenance Checklist</h2>
-                        
-                        <h3>Infrastructure</h3>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="infra1">
-                            <label class="form-check-label" for="infra1">
-                                Cloud infrastructure setup with auto-scaling
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="infra2">
-                            <label class="form-check-label" for="infra2">
-                                Database clustering and replication
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="infra3">
-                            <label class="form-check-label" for="infra3">
-                                Monitoring and alerting systems
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="infra4">
-                            <label class="form-check-label" for="infra4">
-                                Backup and disaster recovery procedures
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="infra5">
-                            <label class="form-check-label" for="infra5">
-                                CI/CD pipeline for automated deployments
-                            </label>
-                        </div>
-
-                        <h3>Testing & Quality Assurance</h3>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="test1">
-                            <label class="form-check-label" for="test1">
-                                Unit and integration test coverage (>80%)
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="test2">
-                            <label class="form-check-label" for="test2">
-                                User acceptance testing with target demographics
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="test3">
-                            <label class="form-check-label" for="test3">
-                                Performance testing under various load conditions
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="test4">
-                            <label class="form-check-label" for="test4">
-                                Cross-platform compatibility testing
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="test5">
-                            <label class="form-check-label" for="test5">
-                                Accessibility testing with assistive technologies
-                            </label>
+                        <div class="col-md-8 align-self-center">
+                            <h1>Planning Checklist</h1>
+                            <p class="lead mb-0">Guidance for context-specific walking app design,
+                                development, testing, and release.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            
+        </div>
+    </header>
+    <main class="container py-5">
+        <div class="row">
+            <div class="col-md-8">
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2>Design Phase</h2>
+                        <p>The design phase establishes the foundation for a walking app by aligning
+                            user needs with contextual factors. Unlike generic mobility
+                            applications, context-specific walking apps must account for cultural
+                            expectations, accessibility requirements, and local infrastructures.
+                            Early participatory engagement ensures that features reflect lived
+                            experiences rather than external assumptions.</p>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="design1">
+                            <label class="form-check-label" for="design1">Define user personas and
+                                walking purposes.</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="design2">
+                            <label class="form-check-label" for="design2">Identify cultural,
+                                environmental, and infrastructural context factors.</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="design3">
+                            <label class="form-check-label" for="design3">Map key place qualities
+                                such as safety, aesthetics, and accessibility.</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="design4">
+                            <label class="form-check-label" for="design4">Engage stakeholders
+                                through workshops or surveys.</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2>Development Phase</h2>
+                        <p>Development translates design concepts into technical features. Here,
+                            developers select datasets, frameworks, and algorithms that can model
+                            both spatial geometry and platial qualities. Modularity is key, allowing
+                            features to be adapted for local contexts without rebuilding the entire
+                            system.</p>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="dev1">
+                            <label class="form-check-label" for="dev1">Select suitable datasets
+                                (open, municipal, participatory).</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="dev2">
+                            <label class="form-check-label" for="dev2">Implement models that
+                                integrate spatial and platial data.</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="dev3">
+                            <label class="form-check-label" for="dev3">Incorporate accessibility
+                                layers (e.g. surfaces, lighting, gradients).</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="dev4">
+                            <label class="form-check-label" for="dev4">Design modular features to
+                                support local extensions.</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2>Testing Phase</h2>
+                        <p>Testing ensures that the app is technically reliable and experientially
+                            valid. Both system-level validation and user-centred evaluation are
+                            essential, since accuracy in routing does not guarantee a positive or
+                            meaningful walking experience. Think-aloud methods, field trials, and
+                            inclusivity checks strengthen reliability.</p>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="test1">
+                            <label class="form-check-label" for="test1">Conduct technical validation
+                                for stability and accuracy.</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="test2">
+                            <label class="form-check-label" for="test2">Verify integration across
+                                spatial and platial datasets.</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="test3">
+                            <label class="form-check-label" for="test3">Run pilot think-aloud walks
+                                to capture real-time user experience.</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="test4">
+                            <label class="form-check-label" for="test4">Include diverse participants
+                                to test inclusivity.</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2>Release Phase</h2>
+                        <p>The release phase is about more than deployment. It involves
+                            communicating the app’s purpose, establishing trust, and ensuring
+                            long-term sustainability. Transparency on data ethics and ongoing
+                            feedback loops are vital for adoption and community acceptance.</p>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="release1">
+                            <label class="form-check-label" for="release1">Prepare communication
+                                highlighting context-specific features.</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="release2">
+                            <label class="form-check-label" for="release2">Publish transparent
+                                policies on data, privacy, and ethics.</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="release3">
+                            <label class="form-check-label" for="release3">Provide feedback channels
+                                for user input and updates.</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="release4">
+                            <label class="form-check-label" for="release4">Plan for seasonal and
+                                cultural adaptations in routes.</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="col-md-4">
                 <div class="card mb-4">
                     <div class="card-body">
-                        <h4><i class="bi bi-check-circle text-success"></i> Checklist Progress</h4>
-                        <div class="progress mb-3">
-                            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
-                        </div>
-                        <p class="small text-muted">Track your implementation progress</p>
-                    </div>
-                </div>
-
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h4><i class="bi bi-lightning text-warning"></i> Priority Items</h4>
-                        <ul class="small">
-                            <li><strong>Critical:</strong> GPS accuracy and battery optimization</li>
-                            <li><strong>High:</strong> Data privacy and security compliance</li>
-                            <li><strong>Medium:</strong> Social features and personalization</li>
-                            <li><strong>Low:</strong> Advanced analytics and reporting</li>
+                        <h4><i class="bi bi-clipboard-check text-primary"></i> Checklist Summary
+                        </h4>
+                        <ul class="list-unstyled small">
+                            <li><strong>Design:</strong> Personas, context, place qualities</li>
+                            <li><strong>Development:</strong> Data, models, modularity</li>
+                            <li><strong>Testing:</strong> Validation, pilots, inclusivity</li>
+                            <li><strong>Release:</strong> Transparency, communication, updates</li>
                         </ul>
-                    </div>
-                </div>
-
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h4><i class="bi bi-tools text-info"></i> Development Phases</h4>
-                        <ol class="small">
-                            <li><strong>Phase 1:</strong> Core functionality and basic UX</li>
-                            <li><strong>Phase 2:</strong> Advanced features and optimization</li>
-                            <li><strong>Phase 3:</strong> Social features and analytics</li>
-                            <li><strong>Phase 4:</strong> Advanced personalization and AI</li>
-                        </ol>
-                    </div>
-                </div>
-
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h4><i class="bi bi-book text-info"></i> Related Resources</h4>
-                        <div class="d-grid gap-2">
-                            <a href="../place-and-walking/technical-architecture.html" class="btn btn-outline-primary btn-sm">Technical Architecture</a>
-                            <a href="../design/user-experience.html" class="btn btn-outline-primary btn-sm">UX Design Patterns</a>
-                            <a href="../resources/data-sharing.html" class="btn btn-outline-primary btn-sm">Data Standards</a>
-                        </div>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-body">
-                        <h4><i class="bi bi-download text-success"></i> Download Checklist</h4>
-                        <p class="small">Save this checklist for offline reference during development.</p>
-                        <button class="btn btn-success btn-sm w-100" onclick="window.print()">
-                            <i class="bi bi-printer"></i> Print/Save PDF
-                        </button>
+                        <h4><i class="bi bi-book text-info"></i> Related Topics</h4>
+                        <div class="d-grid gap-2">
+                            <a href="../design/user-experience.html"
+                                class="btn btn-outline-primary btn-sm">UX Patterns</a>
+                            <a href="../design/accessibility.html"
+                                class="btn btn-outline-primary btn-sm">Accessibility</a>
+                            <a href="../place-and-walking/cultural-dimensions.html"
+                                class="btn btn-outline-primary btn-sm">Cultural Dimensions</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+
+
+
     <footer class="bg-dark p-4">
         <div class="container text-center text-white">
             <div class="row">
@@ -552,14 +419,19 @@
                     </a>
                 </div>
             </div>
-            <p class="mt-4">This activity was supported by the Horizon CDT Impact Grant, made possible through funding
-                from the Engineering and Physical Sciences Research Council (EPSRC) [grant number EP/S023305/1].</p>
+            <p class="mt-4">This activity was supported by the Horizon CDT Impact Grant, made
+                possible through funding
+                from the Engineering and Physical Sciences Research Council (EPSRC) [grant number
+                EP/S023305/1].</p>
             <hr>
-            <p>Website and initial organisation by <a class="text-white" href="https://jwilliams.science/">James
-                    Williams</a> | <a class="text-white" href="../../imports/sources.md">Attribution</a></p>
+            <p>Website and initial organisation by <a class="text-white"
+                    href="https://jwilliams.science/">James
+                    Williams</a> | <a class="text-white"
+                    href="../../imports/sources.md">Attribution</a></p>
         </div>
     </footer>
     <script type="text/javascript" src="../../imports/Bootstrap/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="../../imports/vanilla-tilt/vanilla-tilt.js"></script>
 </body>
+
 </html>

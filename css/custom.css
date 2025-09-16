@@ -22,23 +22,35 @@ body {
     color: var(--text-color);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Source Serif Pro', Georgia, serif;
     font-weight: 600;
 }
 
-.card, .btn, .dropdown-menu, .navbar-toggler, .form-control, .form-select {
+.card,
+.btn,
+.dropdown-menu,
+.navbar-toggler,
+.form-control,
+.form-select {
     border-radius: var(--border-radius) !important;
 }
 
 /* Remove border radius from specific elements */
-.navbar, .dropdown-divider, hr {
+.navbar,
+.dropdown-divider,
+hr {
     border-radius: 0 !important;
 }
 
 #main-header {
     background-color: #6ce2a7;
-    background-image:  url("../images/background.jpg");
+    background-image: url("../images/background2.png");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -48,6 +60,57 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 8rem;
 }
 
+/* 
+ * Background variants for different sections or themes
+ * 
+ * To change the background for any documentation page:
+ * 1. Add the appropriate class to the #main-header div
+ * 2. Available classes:
+ *    - bg-forest: Forest path with wildflowers (background2.png)
+ *    - bg-park: People walking in park (background3.png) 
+ *    - bg-urban: Cityscape with walking path (background4.png)
+ *    - bg-city-park: Urban park with skyline (background5.png)
+ *    - bg-original: Original background (background.jpg)
+ * 
+ * To add new backgrounds:
+ * 1. Add the image to the /images/ directory
+ * 2. Add a new CSS class below following the pattern
+ * 3. Update this comment with the new class name
+ */
+#main-header.bg-forest {
+    background-image: url("../images/background2.png");
+}
+
+#main-header.bg-park {
+    background-image: url("../images/background3.png");
+}
+
+#main-header.bg-urban {
+    background-image: url("../images/background4.png");
+}
+
+#main-header.bg-original {
+    background-image: url("../images/background.jpg");
+}
+
+/* Additional background options */
+#main-header.bg-city-park {
+    background-image: url("../images/background5.png");
+}
+
+/* Future expandable background system */
+#main-header.bg-custom-1 {
+    background-image: url("../images/background6.png");
+}
+
+#main-header.bg-custom-2 {
+    background-image: url("../images/background7.png");
+}
+
+#main-header.bg-custom-3 {
+    background-image: url("../images/background8.png");
+}
+
 #main-header #main-logo {
     width: 800px;
 }
@@ -55,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
 .col-md-4 #main-logo {
     border-right: 2px solid white;
     padding-right: 8px;
-} 
+}
 
 .bg-dark-transparent {
     background-color: rgba(18, 18, 18, 0.8);
@@ -73,7 +136,7 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 }
 
-main { 
+main {
     margin-top: -40px;
     margin-bottom: 40px;
 }
@@ -106,7 +169,8 @@ nav {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-nav .nav-item, nav .nav-link {
+nav .nav-item,
+nav .nav-link {
     font-size: 0.9rem;
     font-weight: 500;
     letter-spacing: 0.5px;
@@ -149,7 +213,8 @@ nav .dropdown-item:hover {
     transform: translateY(-1px);
 }
 
-.btn-outline-primary:hover, .btn-outline-danger:hover {
+.btn-outline-primary:hover,
+.btn-outline-danger:hover {
     transform: translateY(-1px);
 }
 
@@ -196,12 +261,12 @@ footer {
 }
 
 /* Grid for Research Hub (5 columns) */
-#researchHubDropdown + .mega-menu-dropdown .mega-menu-row {
+#researchHubDropdown+.mega-menu-dropdown .mega-menu-row {
     grid-template-columns: 220px repeat(4, 1fr);
 }
 
 /* Grid for Impact Outputs (3 columns) */
-#impactOutputsDropdown + .mega-menu-dropdown .mega-menu-row {
+#impactOutputsDropdown+.mega-menu-dropdown .mega-menu-row {
     grid-template-columns: 220px repeat(2, 1fr);
 }
 
@@ -245,8 +310,7 @@ footer {
     max-width: 220px;
 }
 
-.mega-menu-col-dropdown {
-}
+.mega-menu-col-dropdown {}
 
 .mega-menu-dropdown .mega-menu-header {
     color: white;
@@ -338,18 +402,18 @@ footer {
         width: 95vw;
         padding: 6px;
     }
-    
+
     .mega-menu-row {
         flex-wrap: wrap;
         gap: 15px;
     }
-    
+
     .mega-menu-col-dropdown {
         flex: 1 1 calc(50% - 10px);
         min-width: 200px;
         max-width: none;
     }
-    
+
     .mega-menu-col-visual-dropdown {
         flex: 1 1 100%;
         min-height: 120px;
@@ -360,10 +424,9 @@ footer {
     .mega-menu-row {
         flex-direction: column;
     }
-    
+
     .mega-menu-col-dropdown {
         flex: none;
         max-width: none;
     }
 }
-
